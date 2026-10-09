@@ -1,0 +1,1831 @@
+00:00 +0: loading /Users/burcubalta/Desktop/development/cari_takip/test/core/database/database_migrations_test.dart
+00:00 +0: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/validators_test.dart: cari adı boş, null veya sadece boşluk geçersiz
+00:00 +1: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/validators_test.dart: cari adı geçerli ad
+00:00 +2: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/currency_test.dart: parseTlToKurus sıfır ve tam liralar
+00:00 +3: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/currency_test.dart: parseTlToKurus sıfır ve tam liralar
+00:00 +4: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/currency_test.dart: parseTlToKurus sıfır ve tam liralar
+00:00 +5: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/currency_test.dart: parseTlToKurus sıfır ve tam liralar
+00:00 +6: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/currency_test.dart: parseTlToKurus sıfır ve tam liralar
+00:00 +7: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/currency_test.dart: parseTlToKurus sıfır ve tam liralar
+00:00 +8: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/currency_test.dart: parseTlToKurus sıfır ve tam liralar
+00:00 +9: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/currency_test.dart: parseTlToKurus sıfır ve tam liralar
+00:00 +10: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/validators_test.dart: tutar (kuruş) null, sıfır ve negatif geçersiz; pozitif geçerli
+00:00 +11: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/currency_test.dart: parseTlToKurus kuruşlu tutar
+00:00 +12: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/app_date_test.dart: toDbDate YYYY-MM-DD üretir
+00:00 +13: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/app_date_test.dart: toDbDate YYYY-MM-DD üretir
+00:00 +14: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/app_date_test.dart: toDbDate YYYY-MM-DD üretir
+00:00 +15: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/app_date_test.dart: toDbDate YYYY-MM-DD üretir
+00:00 +16: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/app_date_test.dart: toDbDate YYYY-MM-DD üretir
+00:00 +17: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/app_date_test.dart: toDbDate YYYY-MM-DD üretir
+00:00 +18: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/currency_test.dart: formatKurusToTl temel biçimler
+00:00 +19: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/app_date_test.dart: parseDbDate geçerli ve geçersiz girdiler
+00:00 +20: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/app_date_test.dart: parseDbDate geçerli ve geçersiz girdiler
+00:00 +21: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/app_date_test.dart: parseDbDate geçerli ve geçersiz girdiler
+00:00 +22: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/currency_test.dart: formatKurusToTl format -> parse gidiş dönüş
+00:00 +23: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/app_date_test.dart: formatDisplay gg.aa.yyyy üretir
+00:00 +24: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/app_date_test.dart: parseDisplay geçerli ve geçersiz girdiler
+00:00 +25: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/app_date_test.dart: display ve db biçimleri gidiş dönüş yapar
+00:00 +26: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/app_date_test.dart: today saat bilgisini atar
+00:00 +27: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/app_date_test.dart: ay başı ve ay sonu
+00:00 +28: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/app_date_test.dart: nowTimestamp UTC ISO-8601 üretir
+00:00 +29: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/app_date_test.dart: ay adı ve ay-yıl biçimi
+00:00 +30: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/app_date_test.dart: formatDateTime gg.aa.yyyy ss:dd üretir
+00:00 +31: /Users/burcubalta/Desktop/development/cari_takip/test/core/utils/file_size_test.dart: formatFileSize bayt, KB, MB ve GB biçimleri
+00:00 +32: /Users/burcubalta/Desktop/development/cari_takip/test/core/database/app_database_test.dart: (setUpAll)
+00:00 +32: /Users/burcubalta/Desktop/development/cari_takip/test/core/database/database_migrations_test.dart: (setUpAll)
+00:00 +32: /Users/burcubalta/Desktop/development/cari_takip/test/core/database/app_database_test.dart: şema v1 ve üç tablo oluşur
+00:00 +33: /Users/burcubalta/Desktop/development/cari_takip/test/core/database/app_database_test.dart: şema v1 ve üç tablo oluşur
+00:00 +34: /Users/burcubalta/Desktop/development/cari_takip/test/core/database/app_database_test.dart: şema v1 ve üç tablo oluşur
+00:00 +35: /Users/burcubalta/Desktop/development/cari_takip/test/core/database/app_database_test.dart: şema v1 ve üç tablo oluşur
+00:00 +36: /Users/burcubalta/Desktop/development/cari_takip/test/core/database/app_database_test.dart: şema v1 ve üç tablo oluşur
+00:00 +37: /Users/burcubalta/Desktop/development/cari_takip/test/core/database/app_database_test.dart: şema v1 ve üç tablo oluşur
+00:00 +38: /Users/burcubalta/Desktop/development/cari_takip/test/core/database/app_database_test.dart: şema v1 ve üç tablo oluşur
+00:00 +38: /Users/burcubalta/Desktop/development/cari_takip/test/core/errors/error_mapper_test.dart: unique ihlali duplicate olarak eşlenir ve özel mesaj kullanılır
+[AppError] SqfliteFfiException(sqlite_error: 2067, , SqliteException(2067): while executing statement, UNIQUE constraint failed: transaction_types.name, constraint failed (code 2067)
+  Causing statement: INSERT INTO transaction_types (name, is_active, created_at, updated_at) VALUES (?, ?, ?, ?), parameters: kira, 1, 2026-09-29T00:00:00.000Z, 2026-09-29T00:00:00.000Z}) DatabaseException(SqliteException(2067): while executing statement, UNIQUE constraint failed: transaction_types.name, constraint failed (code 2067)
+  Causing statement: INSERT INTO transaction_types (name, is_active, created_at, updated_at) VALUES (?, ?, ?, ?), parameters: kira, 1, 2026-09-29T00:00:00.000Z, 2026-09-29T00:00:00.000Z) sql 'INSERT INTO transaction_types (name, is_active, created_at, updated_at) VALUES (?, ?, ?, ?)' args [kira, 1, 2026-09-29T00:00:00.000Z, 2026-09-29T00:00:00.000Z] {details: {database: {path: :memory:, id: 1, readOnly: false, singleInstance: false}}}
+#0      responseToResultOrThrow (package:sqflite_common_ffi/src/method_call.dart:126:9)
+#1      SqfliteIsolate.handle (package:sqflite_common_ffi/src/isolate_io.dart:84:12)
+<asynchronous suspension>
+#2      _isolateHandle (package:sqflite_common_ffi/src/database_factory_ffi_io.dart:113:10)
+<asynchronous suspension>
+#3      ffiMethodCallhandleInIsolate (package:sqflite_common_ffi/src/database_factory_ffi_io.dart:65:18)
+<asynchronous suspension>
+#4      _SqfliteDatabaseFactoryImpl.invokeMethod (package:sqflite_common/src/mixin/factory.dart:22:8)
+<asynchronous suspension>
+#5      SqfliteDatabaseMixin.txnRawInsert.<anonymous closure> (package:sqflite_common/src/database_mixin.dart:665:14)
+<asynchronous suspension>
+#6      BasicLock.synchronized (package:synchronized/src/basic_lock.dart:38:16)
+<asynchronous suspension>
+#7      SqfliteDatabaseMixin.txnSynchronized (package:sqflite_common/src/database_mixin.dart:591:14)
+<asynchronous suspension>
+#8      _mapFailure (file:///Users/burcubalta/Desktop/development/cari_takip/test/core/errors/error_mapper_test.dart:15:5)
+<asynchronous suspension>
+#9      main.<anonymous closure> (file:///Users/burcubalta/Desktop/development/cari_takip/test/core/errors/error_mapper_test.dart:41:19)
+<asynchronous suspension>
+#10     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:15)
+<asynchronous suspension>
+#11     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#12     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+
+00:00 +39: /Users/burcubalta/Desktop/development/cari_takip/test/core/errors/error_mapper_test.dart: unique ihlali duplicate olarak eşlenir ve özel mesaj kullanılır
+00:00 +40: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup yedek dizininde zaman damgalı adla geçerli bir dosya oluşturur
+00:00 +41: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup yedek dizininde zaman damgalı adla geçerli bir dosya oluşturur
+00:00 +41: /Users/burcubalta/Desktop/development/cari_takip/test/core/errors/error_mapper_test.dart: unique ihlali özel mesaj verilmezse varsayılan mesaj döner
+[AppError] SqfliteFfiException(sqlite_error: 2067, , SqliteException(2067): while executing statement, UNIQUE constraint failed: transaction_types.name, constraint failed (code 2067)
+  Causing statement: INSERT INTO transaction_types (name, is_active, created_at, updated_at) VALUES (?, ?, ?, ?), parameters: Kira, 1, 2026-09-29T00:00:00.000Z, 2026-09-29T00:00:00.000Z}) DatabaseException(SqliteException(2067): while executing statement, UNIQUE constraint failed: transaction_types.name, constraint failed (code 2067)
+  Causing statement: INSERT INTO transaction_types (name, is_active, created_at, updated_at) VALUES (?, ?, ?, ?), parameters: Kira, 1, 2026-09-29T00:00:00.000Z, 2026-09-29T00:00:00.000Z) sql 'INSERT INTO transaction_types (name, is_active, created_at, updated_at) VALUES (?, ?, ?, ?)' args [Kira, 1, 2026-09-29T00:00:00.000Z, 2026-09-29T00:00:00.000Z] {details: {database: {path: :memory:, id: 2, readOnly: false, singleInstance: false}}}
+#0      responseToResultOrThrow (package:sqflite_common_ffi/src/method_call.dart:126:9)
+#1      SqfliteIsolate.handle (package:sqflite_common_ffi/src/isolate_io.dart:84:12)
+<asynchronous suspension>
+#2      _isolateHandle (package:sqflite_common_ffi/src/database_factory_ffi_io.dart:113:10)
+<asynchronous suspension>
+#3      ffiMethodCallhandleInIsolate (package:sqflite_common_ffi/src/database_factory_ffi_io.dart:65:18)
+<asynchronous suspension>
+#4      _SqfliteDatabaseFactoryImpl.invokeMethod (package:sqflite_common/src/mixin/factory.dart:22:8)
+<asynchronous suspension>
+#5      SqfliteDatabaseMixin.txnRawInsert.<anonymous closure> (package:sqflite_common/src/database_mixin.dart:665:14)
+<asynchronous suspension>
+#6      BasicLock.synchronized (package:synchronized/src/basic_lock.dart:38:16)
+<asynchronous suspension>
+#7      SqfliteDatabaseMixin.txnSynchronized (package:sqflite_common/src/database_mixin.dart:591:14)
+<asynchronous suspension>
+#8      _mapFailure (file:///Users/burcubalta/Desktop/development/cari_takip/test/core/errors/error_mapper_test.dart:15:5)
+<asynchronous suspension>
+#9      main.<anonymous closure> (file:///Users/burcubalta/Desktop/development/cari_takip/test/core/errors/error_mapper_test.dart:57:19)
+<asynchronous suspension>
+#10     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:15)
+<asynchronous suspension>
+#11     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#12     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+00:00 +42: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup yedek dizininde zaman damgalı adla geçerli bir dosya oluşturur
+00:00 +42: /Users/burcubalta/Desktop/development/cari_takip/test/core/errors/error_mapper_test.dart: unique ihlali özel mesaj verilmezse varsayılan mesaj döner
+<asynchronous suspension>
+
+00:00 +43: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup yedek dizininde zaman damgalı adla geçerli bir dosya oluşturur
+00:00 +44: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup yedek dizininde zaman damgalı adla geçerli bir dosya oluşturur
+00:00 +44: /Users/burcubalta/Desktop/development/cari_takip/test/core/errors/error_mapper_test.dart: foreign key ihlali inUse olarak eşlenir
+[AppError] SqfliteFfiException(sqlite_error: 787, , SqliteException(787): while executing statement, FOREIGN KEY constraint failed, constraint failed (code 787)
+  Causing statement: INSERT INTO financial_transactions (customer_id, transaction_type_id, transaction_date, amount_kurus, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?), parameters: 999, 1, 2026-09-29, 100, 2026-09-29T00:00:00.000Z, 2026-09-29T00:00:00.000Z}) DatabaseException(SqliteException(787): while executing statement, FOREIGN KEY constraint failed, constraint failed (code 787)
+  Causing statement: INSERT INTO financial_transactions (customer_id, transaction_type_id, transaction_date, amount_kurus, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?), parameters: 999, 1, 2026-09-29, 100, 2026-09-29T00:00:00.000Z, 2026-09-29T00:00:00.000Z) sql 'INSERT INTO financial_transactions (customer_id, transaction_type_id, transaction_date, amount_kurus, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?)' args [999, 1, 2026-09-29, 100, 2026-09-29T00:00:00.000Z, 2026-09-29T00:00:00.000Z] {details: {database: {path: :memory:, id: 3, readOnly: false, singleInstance: false}}}
+#0      responseToResultOrThrow (package:sqflite_common_ffi/src/method_call.dart:126:9)
+#1      SqfliteIsolate.handle (package:sqflite_common_ffi/src/isolate_io.dart:84:12)
+<asynchronous suspension>
+#2      _isolateHandle (package:sqflite_common_ffi/src/database_factory_ffi_io.dart:113:10)
+<asynchronous suspension>
+#3      ffiMethodCallhandleInIsolate (package:sqflite_common_ffi/src/database_factory_ffi_io.dart:65:18)
+<asynchronous suspension>
+#4      _SqfliteDatabaseFactoryImpl.invokeMethod (package:sqflite_common/src/mixin/factory.dart:22:8)
+<asynchronous suspension>
+#5      SqfliteDatabaseMixin.txnRawInsert.<anonymous closure> (package:sqflite_common/src/database_mixin.dart:665:14)
+<asynchronous suspension>
+#6      BasicLock.synchronized (package:synchronized/src/basic_lock.dart:38:16)
+<asynchronous suspension>
+#7      SqfliteDatabaseMixin.txnSynchronized (package:sqflite_common/src/database_mixin.dart:591:14)
+<asynchronous suspension>
+#8      _mapFailure (file:///Users/burcubalta/Desktop/development/cari_takip/test/core/errors/error_mapper_test.dart:15:5)
+<asynchronous suspension>
+#9      main.<anonymous closure> (file:///Users/burcubalta/Desktop/development/cari_takip/test/core/errors/error_mapper_test.dart:69:19)
+<asynchronous suspension>
+#10     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:15)
+<asynchronous suspension>
+#11     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#12     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+
+00:00 +45: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup yedek dizininde zaman damgalı adla geçerli bir dosya oluşturur
+00:00 +46: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup yedek dizininde zaman damgalı adla geçerli bir dosya oluşturur
+00:00 +46: /Users/burcubalta/Desktop/development/cari_takip/test/core/errors/error_mapper_test.dart: diğer veritabanı hataları storage olarak eşlenir
+[AppError] SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while preparing statement, no such table: yok, SQL logic error (code 1)
+  Causing statement: SELECT * FROM yok}) DatabaseException(SqliteException(1): while preparing statement, no such table: yok, SQL logic error (code 1)
+  Causing statement: SELECT * FROM yok) sql 'SELECT * FROM yok' {details: {database: {path: :memory:, id: 4, readOnly: false, singleInstance: false}}}
+#0      responseToResultOrThrow (package:sqflite_common_ffi/src/method_call.dart:126:9)
+#1      SqfliteIsolate.handle (package:sqflite_common_ffi/src/isolate_io.dart:84:12)
+<asynchronous suspension>
+#2      _isolateHandle (package:sqflite_common_ffi/src/database_factory_ffi_io.dart:113:10)
+<asynchronous suspension>
+#3      ffiMethodCallhandleInIsolate (package:sqflite_common_ffi/src/database_factory_ffi_io.dart:65:18)
+<asynchronous suspension>
+#4      _SqfliteDatabaseFactoryImpl.invokeMethod (package:sqflite_common/src/mixin/factory.dart:22:8)
+<asynchronous suspension>
+#5      SqfliteDatabaseMixin.txnRawQuery.<anonymous closure> (package:sqflite_common/src/database_mixin.dart:680:30)
+<asynchronous suspension>
+#6      BasicLock.synchronized (package:synchronized/src/basic_lock.dart:38:16)
+<asynchronous suspension>
+#7      SqfliteDatabaseMixin.txnSynchronized (package:sqflite_common/src/database_mixin.dart:591:14)
+<asynchronous suspension>
+#8      _mapFailure (file:///Users/burcubalta/Desktop/development/cari_takip/test/core/errors/error_mapper_test.dart:15:5)
+<asynchronous suspension>
+#9      main.<anonymous closure> (file:///Users/burcubalta/Desktop/development/cari_takip/test/core/errors/error_mapper_test.dart:85:19)
+<asynchronous suspension>
+#10     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:15)
+<asynchronous suspension>
+#11     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#12     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+
+00:00 +47: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup yedek dizininde zaman damgalı adla geçerli bir dosya oluşturur
+00:00 +48: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup yedek dizininde zaman damgalı adla geçerli bir dosya oluşturur
+00:00 +49: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup yedek dizininde zaman damgalı adla geçerli bir dosya oluşturur
+00:00 +49: /Users/burcubalta/Desktop/development/cari_takip/test/core/errors/error_mapper_test.dart: bilinmeyen hata unknown olarak eşlenir, ham mesaj sızmaz
+[AppError] Bad state: teknik ayrıntı
+
+00:00 +50: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup yedek dizininde zaman damgalı adla geçerli bir dosya oluşturur
+00:00 +51: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup yedek dizininde zaman damgalı adla geçerli bir dosya oluşturur
+00:00 +52: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup yedek dizininde zaman damgalı adla geçerli bir dosya oluşturur
+00:00 +52: /Users/burcubalta/Desktop/development/cari_takip/test/core/errors/error_mapper_test.dart: userMessage yalnızca kullanıcı mesajını verir
+[AppError] Bad state: x
+
+00:00 +53: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_validator_test.dart: geçerli yedek kabul edilir ve özeti döner
+00:00 +54: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_validator_test.dart: geçerli yedek kabul edilir ve özeti döner
+00:00 +55: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_validator_test.dart: geçerli yedek kabul edilir ve özeti döner
+00:00 +56: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup manuel ve geri yükleme öncesi yedeklerin adları ayrışır
+00:00 +57: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup manuel ve geri yükleme öncesi yedeklerin adları ayrışır
+00:00 +58: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_validator_test.dart: olmayan dosya reddedilir
+00:00 +59: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup yedek, o andaki veriyi içerir; sonraki değişiklikleri içermez
+00:00 +60: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup yedek, o andaki veriyi içerir; sonraki değişiklikleri içermez
+00:00 +61: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_validator_test.dart: 16 bayttan küçük dosya reddedilir
+00:00 +62: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup canlı veritabanı açıkken ve yazılırken tutarlı yedek alınır
+00:00 +63: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_validator_test.dart: boş dosya reddedilir
+00:00 +64: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup şema sürümü yedekte korunur
+00:00 +65: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_validator_test.dart: başka bir uygulamanın SQLite dosyası reddedilir
+00:00 +66: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup kullanıcının seçtiği konuma yazar ve mevcut dosyanın üzerine geçer
+00:00 +67: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_validator_test.dart: user_version 0 olan SQLite dosyası reddedilir
+00:00 +68: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup klasör yolu verildiğinde dosyanın o klasöre yazılmasını sağlar
+00:00 +69: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_validator_test.dart: uygulamadan daha yeni şema sürümü reddedilir
+00:00 +70: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_validator_test.dart: uygulamadan daha yeni şema sürümü reddedilir
+00:00 +71: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup aynı saniyede alınan iki yedek birbirinin üzerine yazılmaz
+00:00 +72: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup aynı saniyede alınan iki yedek birbirinin üzerine yazılmaz
+00:00 +73: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_validator_test.dart: tablosu silinmiş dosya reddedilir
+00:00 +74: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_validator_test.dart: tablosu silinmiş dosya reddedilir
+00:00 +75: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: createBackup hedef klasör yazılamıyorsa net bir klasör izni hatası verir
+00:00 +76: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_validator_test.dart: foreign key tutarsızlığı olan dosya reddedilir
+00:00 +77: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: günlük otomatik yedek günde yalnızca bir kez alınır
+00:00 +78: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/restore_service_test.dart: (setUpAll)
+00:00 +78: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_validator_test.dart: bozulmuş dosya AppException ile reddedilir (çökmez)
+00:00 +79: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: günlük otomatik yedek ertesi gün yeni yedek alınır
+00:00 +80: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/restore_service_test.dart: restore sonrası veri yedekle birebir aynıdır
+00:00 +81: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/restore_service_test.dart: restore sonrası veri yedekle birebir aynıdır
+00:00 +82: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/restore_service_test.dart: restore sonrası veri yedekle birebir aynıdır
+00:00 +83: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/restore_service_test.dart: restore sonrası veri yedekle birebir aynıdır
+00:00 +84: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: retention son 30 otomatik yedek saklanır, eskileri silinir
+00:00 +85: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: retention son 30 otomatik yedek saklanır, eskileri silinir
+00:00 +86: /Users/burcubalta/Desktop/development/cari_takip/test/core/backup/backup_service_test.dart: retention son 30 otomatik yedek saklanır, eskileri silinir
+00:00 +87: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: başlık ve ilk satırları gösterir
+00:00 +88: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: başlık ve ilk satırları gösterir
+00:00 +89: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: başlık ve ilk satırları gösterir
+00:00 +90: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: başlık ve ilk satırları gösterir
+00:00 +91: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: başlık ve ilk satırları gösterir
+00:00 +92: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: başlık ve ilk satırları gösterir
+00:00 +93: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: başlık ve ilk satırları gösterir
+00:01 +94: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: başlık ve ilk satırları gösterir
+00:01 +95: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: başlık ve ilk satırları gösterir
+00:01 +96: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: başlık ve ilk satırları gösterir
+00:01 +97: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: başlık ve ilk satırları gösterir
+00:01 +98: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: başlık ve ilk satırları gösterir
+00:01 +99: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: başlık ve ilk satırları gösterir
+00:01 +100: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: başlık ve ilk satırları gösterir
+00:01 +101: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: başlık ve ilk satırları gösterir
+00:01 +102: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: başlık ve ilk satırları gösterir
+00:01 +103: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/confirmation_dialog_test.dart: onaylanınca true döner
+00:01 +104: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/confirmation_dialog_test.dart: onaylanınca true döner
+00:01 +105: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/confirmation_dialog_test.dart: onaylanınca true döner
+00:01 +106: /Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart: geniş pencere menü açık gelir: başlık, etiketler ve alttaki Ayarlar
+00:01 +107: /Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart: geniş pencere menü açık gelir: başlık, etiketler ve alttaki Ayarlar
+00:01 +108: /Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart: geniş pencere menü açık gelir: başlık, etiketler ve alttaki Ayarlar
+00:01 +109: /Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart: geniş pencere menü açık gelir: başlık, etiketler ve alttaki Ayarlar
+00:01 +110: /Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart: geniş pencere menü açık gelir: başlık, etiketler ve alttaki Ayarlar
+00:01 +111: /Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart: geniş pencere menü açık gelir: başlık, etiketler ve alttaki Ayarlar
+00:01 +112: /Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart: geniş pencere menü açık gelir: başlık, etiketler ve alttaki Ayarlar
+00:01 +113: /Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart: geniş pencere menü açık gelir: başlık, etiketler ve alttaki Ayarlar
+00:01 +114: /Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart: geniş pencere menü açık gelir: başlık, etiketler ve alttaki Ayarlar
+00:01 +115: /Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart: geniş pencere menü açık gelir: başlık, etiketler ve alttaki Ayarlar
+00:01 +116: /Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart: geniş pencere menü açık gelir: başlık, etiketler ve alttaki Ayarlar
+00:01 +117: /Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart: geniş pencere menü açık gelir: başlık, etiketler ve alttaki Ayarlar
+00:01 +118: /Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart: geniş pencere menü açık gelir: başlık, etiketler ve alttaki Ayarlar
+00:01 +119: /Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart: geniş pencere menü açık gelir: başlık, etiketler ve alttaki Ayarlar
+00:01 +120: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:01 +121: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:01 +122: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:01 +123: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:01 +124: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:01 +125: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +126: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +127: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +128: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +129: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +130: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +131: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +132: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +133: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +134: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +135: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +136: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +137: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +138: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +139: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +140: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +141: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +142: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +143: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +144: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +145: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +146: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +146: /Users/burcubalta/Desktop/development/cari_takip/test/app_smoke_test.dart: sidebar ile Raporlar ekranına geçilir
+
+Warning: A call to tap() with finder "Found 1 widget with text "Raporlar" descending from widget with type "NavigationRail": [
+  Text("Raporlar", dependencies: [DefaultSelectionStyle, DefaultTextStyle, MediaQuery]),
+]" derived an Offset (Offset(0.0, 240.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderParagraph#ab0a5 NEEDS-PAINT
+The hit test result at that offset is: HitTestResult(RenderPointerListener#2e483@Offset(0.0, 0.0), RenderSemanticsAnnotations#b432e@Offset(0.0, 0.0), RenderMouseRegion#00198@Offset(0.0, 0.0), RenderSemanticsAnnotations#9459a@Offset(0.0, 0.0), _RenderInkFeatures#4e6be@Offset(0.0, 0.0), RenderCustomPaint#8d628@Offset(0.0, 0.0), RenderClipPath#7b9cf@Offset(0.0, 0.0), RenderStack#5fdb1@Offset(0.0, 0.0), RenderSemanticsAnnotations#a67f8@Offset(0.0, 0.0), RenderFlex#6e286@Offset(0.0, 176.0), RenderPositionedBox#71fe1@Offset(0.0, 176.0), RenderFlex#43ef9@Offset(0.0, 240.0), RenderPadding#34da5@Offset(0.0, 240.0), _RenderInkFeatures#a591a@Offset(0.0, 240.0), RenderPhysicalModel#62a41@Offset(0.0, 240.0), RenderSemanticsAnnotations#d6849@Offset(0.0, 240.0), RenderSemanticsAnnotations#a7641@Offset(0.0, 240.0), RenderFlex#8128e@Offset(0.0, 240.0), RenderConstrainedBox#00bda@Offset(0.0, 240.0), RenderFlex#80783@Offset(0.0, 240.0), RenderConstrainedBox#2a90e@Offset(0.0, 240.0), _RenderSingleChildViewport#e2259@Offset(0.0, 240.0), RenderIgnorePointer#0f081@Offset(0.0, 240.0), RenderSemanticsAnnotations#639dc@Offset(0.0, 240.0), RenderPointerListener#c01cf@Offset(0.0, 240.0), RenderSemanticsGestureHandler#3de74@Offset(0.0, 240.0), RenderPointerListener#a0630@Offset(0.0, 240.0), _RenderScrollSemantics#54f32@Offset(0.0, 240.0), RenderClipRect#92d37@Offset(0.0, 240.0), RenderRepaintBoundary#3f058@Offset(0.0, 240.0), RenderCustomPaint#7250f@Offset(0.0, 240.0), RenderMouseRegion#b0c54@Offset(0.0, 240.0), RenderPointerListener#5b90b@Offset(0.0, 240.0), RenderSemanticsGestureHandler#8bdcc@Offset(0.0, 240.0), RenderPointerListener#239b0@Offset(0.0, 240.0), RenderRepaintBoundary#c3398@Offset(0.0, 240.0), _RenderLayoutBuilder#ad19c@Offset(0.0, 240.0), RenderCustomMultiChildLayoutBox#e05cf@Offset(0.0, 240.0), _RenderInkFeatures#7221c@Offset(0.0, 240.0), RenderPhysicalModel#e8239@Offset(0.0, 240.0), _RenderLayoutBuilder#0532f@Offset(0.0, 240.0), RenderSemanticsAnnotations#80d45@Offset(0.0, 240.0), RenderRepaintBoundary#ef9ae@Offset(0.0, 240.0), RenderIgnorePointer#b649c@Offset(0.0, 240.0), RenderAnimatedOpacity#2a2ec@Offset(0.0, 240.0), RenderAnimatedOpacity#091bb@Offset(0.0, 240.0), _RenderColoredBox#e8d67@Offset(0.0, 240.0), RenderAnimatedOpacity#39d8a@Offset(0.0, 240.0), RenderIgnorePointer#5c617@Offset(0.0, 240.0), RenderAnimatedOpacity#67a10@Offset(0.0, 240.0), RenderRepaintBoundary#68941@Offset(0.0, 240.0), RenderSemanticsAnnotations#31b74@Offset(0.0, 240.0), RenderOffstage#f2839@Offset(0.0, 240.0), RenderSemanticsAnnotations#753df@Offset(0.0, 240.0), _RenderTheater#d4e8b@Offset(0.0, 240.0), RenderAbsorbPointer#24f36@Offset(0.0, 240.0), RenderPointerListener#668ec@Offset(0.0, 240.0), RenderSemanticsAnnotations#73e33@Offset(0.0, 240.0), RenderSemanticsAnnotations#8165e@Offset(0.0, 240.0), RenderSemanticsAnnotations#6c404@Offset(0.0, 240.0), RenderTapRegionSurface#cac98@Offset(0.0, 240.0), RenderSemanticsAnnotations#82b02@Offset(0.0, 240.0), RenderSemanticsAnnotations#58870@Offset(0.0, 240.0), HitTestEntry<HitTestTarget>#e5ad1(_ReusableRenderView#1bd17), HitTestEntry<HitTestTarget>#4b196(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2165:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1947:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1080:7)
+#3      main.<anonymous closure> (file:///Users/burcubalta/Desktop/development/cari_takip/test/app_smoke_test.dart:38:18)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+00:02 +147: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +148: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +149: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +150: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +151: /Users/burcubalta/Desktop/development/cari_takip/test/core/widgets/table_card_test.dart: kaydırınca başlık sabit kalır, son satıra ulaşılır
+00:02 +152: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 900x600 pencerede bozulmaz
+00:02 +153: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 900x600 pencerede bozulmaz
+00:02 +154: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 900x600 pencerede bozulmaz
+00:02 +155: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 900x600 pencerede bozulmaz
+00:02 +156: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 900x600 pencerede bozulmaz
+00:02 +157: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 900x600 pencerede bozulmaz
+00:02 +158: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 900x600 pencerede bozulmaz
+00:02 +159: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 900x600 pencerede bozulmaz
+00:02 +160: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 900x600 pencerede bozulmaz
+00:02 +161: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 900x600 pencerede bozulmaz
+00:03 +162: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 900x600 pencerede bozulmaz
+00:03 +163: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 900x600 pencerede bozulmaz
+00:03 +164: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 900x600 pencerede bozulmaz
+00:03 +165: /Users/burcubalta/Desktop/development/cari_takip/test/features/customers/presentation/customer_pages_test.dart: liste cari yoksa empty state ve yönlendirme gösterir
+00:03 +165: /Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart: gezinme cari alt sayfalarında Cariler seçili kalır
+[AppError] ProviderException: Tried to use a provider that is in error state.
+
+A provider threw the following exception:
+UnimplementedError: appDatabaseProvider, main() içinde override edilmelidir.
+
+The stack trace of the exception:
+#0      appDatabaseProvider.<anonymous closure> (package:cari_takip/core/database/database_provider.dart:6:12)
+#1      Provider.create (package:riverpod/src/providers/provider.dart:59:36)
+#2      $ProviderElement.create (package:riverpod/src/providers/provider.dart:343:33)
+#3      ProviderElement.buildState (package:riverpod/src/core/element.dart:751:28)
+#4      ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#5      ProviderElement.flush (package:riverpod/src/core/element.dart:704:9)
+#6      $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#7      ProviderElement.listen (package:riverpod/src/core/element.dart:991:28)
+#8      Ref.watch (package:riverpod/src/core/ref.dart:726:20)
+#9      transactionRepositoryProvider.<anonymous closure> (package:cari_takip/features/transactions/presentation/transaction_providers.dart:12:44)
+#10     Provider.create (package:riverpod/src/providers/provider.dart:59:36)
+#11     $ProviderElement.create (package:riverpod/src/providers/provider.dart:343:33)
+#12     ProviderElement.buildState (package:riverpod/src/core/element.dart:751:28)
+#13     ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#14     ProviderElement.flush (package:riverpod/src/core/element.dart:704:9)
+#15     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#16     ProviderElement.listen (package:riverpod/src/core/element.dart:991:28)
+#17     Ref.watch (package:riverpod/src/core/ref.dart:726:20)
+#18     customerRecentTransactionsProvider.<anonymous closure> (package:cari_takip/features/transactions/presentation/transaction_providers.dart:33:8)
+#19     FunctionalFamily.call.<anonymous closure> (package:riverpod/src/core/family.dart:159:25)
+#20     FutureProvider.create (package:riverpod/src/providers/future_provider.dart:142:46)
+#21     $FutureProviderElement.create.<anonymous closure> (package:riverpod/src/providers/future_provider.dart:167:45)
+#22     ElementWithFuture.handleFuture.<anonymous closure> (package:riverpod/src/core/element.dart:218:30)
+#23     ElementWithFuture._handleAsync (package:riverpod/src/core/element.dart:282:35)
+#24     ElementWithFuture.handleFuture (package:riverpod/src/core/element.dart:212:12)
+#25     $FutureProviderElement.create (package:riverpod/src/providers/future_provider.dart:167:12)
+#26     ProviderElement.buildState (package:riverpod/src/core/element.dart:751:28)
+#27     ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#28     ProviderElement.flush (package:riverpod/src/core/element.dart:704:9)
+#29     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#30     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1141:26)
+#31     ConsumerStatefulElement.watch.<anonymous closure> (package:flutter_riverpod/src/core/consumer.dart:490:37)
+#32     _LinkedHashMapMixin.putIfAbsent (dart:_compact_hash:631:23)
+#33     ConsumerStatefulElement.watch (package:flutter_riverpod/src/core/consumer.dart:483:14)
+#34     _RecentTransactions.build (package:cari_takip/features/customers/presentation/customer_detail_page.dart:209:30)
+#35     _ConsumerState.build (package:flutter_riverpod/src/core/consumer.dart:283:48)
+#36     StatefulElement.build (package:flutter/src/widgets/framework.dart:5944:27)
+#37     ConsumerStatefulElement.build (package:flutter_riverpod/src/core/consumer.dart:460:20)
+#38     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5830:15)
+#39     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#40     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#41     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#42     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#43     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#44     ConsumerStatefulElement.mount (package:flutter_riverpod/src/core/consumer.dart:389:11)
+#45     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#46     MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7277:36)
+#47     MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7292:32)
+#48     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#49     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#50     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#51     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#52     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#53     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#54     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#55     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#56     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#57     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#58     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#59     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#60     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#61     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#62     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#63     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#64     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#65     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#66     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#67     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#68     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#69     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#70     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#71     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#72     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#73     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#74     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#75     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#76     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#77     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#78     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#79     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#80     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#81     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#82     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#83     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#84     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#85     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#86     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#87     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#88     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#89     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#90     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#91     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#92     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#93     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#94     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#95     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#96     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#97     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#98     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#99     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#100    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#101    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#102    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#103    StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#104    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#105    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#106    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#107    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#108    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#109    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#110    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#111    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#112    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#113    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#114    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#115    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#116    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#117    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#118    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#119    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#120    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#121    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#122    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#123    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#124    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#125    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#126    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#127    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#128    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#129    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#130    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#131    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#132    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#133    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#134    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#135    StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#136    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#137    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#138    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#139    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#140    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#141    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#142    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#143    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#144    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#145    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#146    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#147    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#148    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#149    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#150    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#151    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#152    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#153    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#154    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#155    StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#156    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#157    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#158    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#159    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#160    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#161    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#162    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#163    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#164    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#165    SliverMultiBoxAdaptorElement.updateChild (package:flutter/src/widgets/sliver.dart:1092:37)
+#166    SliverMultiBoxAdaptorElement.createChild.<anonymous closure> (package:flutter/src/widgets/sliver.dart:1077:20)
+#167    BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3114:19)
+#168    SliverMultiBoxAdaptorElement.createChild (package:flutter/src/widgets/sliver.dart:1067:12)
+#169    RenderSliverMultiBoxAdaptor._createOrObtainChild.<anonymous closure> (package:flutter/src/rendering/sliver_multi_box_adaptor.dart:368:23)
+#170    RenderObject.invokeLayoutCallback.<anonymous closure> (package:flutter/src/rendering/object.dart:3042:17)
+#171    PipelineOwner._enableMutationsToDirtySubtrees (package:flutter/src/rendering/object.dart:1223:15)
+#172    RenderObject.invokeLayoutCallback (package:flutter/src/rendering/object.dart:3041:14)
+#173    RenderSliverMultiBoxAdaptor._createOrObtainChild (package:flutter/src/rendering/sliver_multi_box_adaptor.dart:357:5)
+#174    RenderSliverMultiBoxAdaptor.insertAndLayoutChild (package:flutter/src/rendering/sliver_multi_box_adaptor.dart:517:5)
+#175    RenderSliverList.performLayout.advance (package:flutter/src/rendering/sliver_list.dart:238:19)
+#176    RenderSliverList.performLayout (package:flutter/src/rendering/sliver_list.dart:278:12)
+#177    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#178    RenderSliverEdgeInsetsPadding.performLayout (package:flutter/src/rendering/sliver_padding.dart:133:12)
+#179    RenderSliverPadding.performLayout (package:flutter/src/rendering/sliver_padding.dart:368:11)
+#180    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#181    RenderViewportBase.layoutChildSequence (package:flutter/src/rendering/viewport.dart:821:13)
+#182    RenderViewport._attemptLayout (package:flutter/src/rendering/viewport.dart:1831:12)
+#183    RenderViewport.performLayout (package:flutter/src/rendering/viewport.dart:1724:20)
+#184    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#185    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#186    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#187    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#188    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#189    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#190    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#191    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#192    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#193    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#194    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#195    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#196    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#197    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#198    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#199    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#200    _RenderCustomClip.performLayout (package:flutter/src/rendering/proxy_box.dart:1549:11)
+#201    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#202    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#203    RenderObject._layoutWithoutResize (package:flutter/src/rendering/object.dart:2771:7)
+#204    PipelineOwner.flushLayout (package:flutter/src/rendering/object.dart:1174:18)
+#205    PipelineOwner.flushLayout (package:flutter/src/rendering/object.dart:1187:15)
+#206    AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2434:27)
+#207    RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:558:5)
+#208    SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#209    SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#210    AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:2261:9)
+#211    _rootRun (dart:async/zone_root.dart:35:13)
+#212    _CustomZone.run (dart:async/zone.dart:810:35)
+#213    TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#214    AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:2250:27)
+#215    WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:719:23)
+<asynchronous suspension>
+#216    TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#217    main.<anonymous closure>.<anonymous closure> (file:///Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart:213:7)
+<asynchronous suspension>
+#218    testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#219    TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#220    StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+
+And rethrown at:
+#0      throwProviderException (package:riverpod/src/common/stack_trace.dart:10:3)
+#1      $ResultError.valueOrProviderException (package:riverpod/src/common/result.dart:108:7)
+#2      Ref.watch (package:riverpod/src/core/ref.dart:733:27)
+#3      transactionRepositoryProvider.<anonymous closure> (package:cari_takip/features/transactions/presentation/transaction_providers.dart:12:44)
+#4      Provider.create (package:riverpod/src/providers/provider.dart:59:36)
+#5      $ProviderElement.create (package:riverpod/src/providers/provider.dart:343:33)
+#6      ProviderElement.buildState (package:riverpod/src/core/element.dart:751:28)
+#7      ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#8      ProviderElement.flush (package:riverpod/src/core/element.dart:704:9)
+#9      $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#10     ProviderElement.listen (package:riverpod/src/core/element.dart:991:28)
+#11     Ref.watch (package:riverpod/src/core/ref.dart:726:20)
+#12     customerRecentTransactionsProvider.<anonymous closure> (package:cari_takip/features/transactions/presentation/transaction_providers.dart:33:8)
+#13     FunctionalFamily.call.<anonymous closure> (package:riverpod/src/core/family.dart:159:25)
+#14     FutureProvider.create (package:riverpod/src/providers/future_provider.dart:142:46)
+#15     $FutureProviderElement.create.<anonymous closure> (package:riverpod/src/providers/future_provider.dart:167:45)
+#16     ElementWithFuture.handleFuture.<anonymous closure> (package:riverpod/src/core/element.dart:218:30)
+#17     ElementWithFuture._handleAsync (package:riverpod/src/core/element.dart:282:35)
+#18     ElementWithFuture.handleFuture (package:riverpod/src/core/element.dart:212:12)
+#19     $FutureProviderElement.create (package:riverpod/src/providers/future_provider.dart:167:12)
+#20     ProviderElement.buildState (package:riverpod/src/core/element.dart:751:28)
+#21     ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#22     ProviderElement.flush (package:riverpod/src/core/element.dart:704:9)
+#23     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#24     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1141:26)
+#25     ConsumerStatefulElement.watch.<anonymous closure> (package:flutter_riverpod/src/core/consumer.dart:490:37)
+#26     _LinkedHashMapMixin.putIfAbsent (dart:_compact_hash:631:23)
+#27     ConsumerStatefulElement.watch (package:flutter_riverpod/src/core/consumer.dart:483:14)
+#28     _RecentTransactions.build (package:cari_takip/features/customers/presentation/customer_detail_page.dart:209:30)
+#29     _ConsumerState.build (package:flutter_riverpod/src/core/consumer.dart:283:48)
+#30     StatefulElement.build (package:flutter/src/widgets/framework.dart:5944:27)
+#31     ConsumerStatefulElement.build (package:flutter_riverpod/src/core/consumer.dart:460:20)
+#32     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5830:15)
+#33     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#34     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#35     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#36     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#37     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#38     ConsumerStatefulElement.mount (package:flutter_riverpod/src/core/consumer.dart:389:11)
+#39     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#40     MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7277:36)
+#41     MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7292:32)
+#42     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#43     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#44     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#45     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#46     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#47     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#48     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#49     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#50     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#51     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#52     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#53     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#54     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#55     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#56     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#57     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#58     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#59     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#60     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#61     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#62     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#63     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#64     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#65     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#66     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#67     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#68     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#69     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#70     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#71     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#72     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#73     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#74     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#75     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#76     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#77     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#78     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#79     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#80     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#81     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#82     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#83     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#84     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#85     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#86     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#87     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#88     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#89     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#90     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#91     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#92     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#93     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#94     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#95     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#96     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#97     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#98     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#99     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#100    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#101    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#102    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#103    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#104    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#105    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#106    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#107    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#108    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#109    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#110    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#111    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#112    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#113    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#114    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#115    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#116    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#117    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#118    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#119    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#120    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#121    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#122    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#123    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#124    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#125    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#126    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#127    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#128    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#129    StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#130    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#131    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#132    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#133    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#134    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#135    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#136    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#137    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#138    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#139    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#140    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#141    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#142    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#143    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#144    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#145    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#146    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#147    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#148    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#149    StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#150    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#151    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#152    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#153    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#154    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#155    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#156    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#157    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#158    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#159    SliverMultiBoxAdaptorElement.updateChild (package:flutter/src/widgets/sliver.dart:1092:37)
+#160    SliverMultiBoxAdaptorElement.createChild.<anonymous closure> (package:flutter/src/widgets/sliver.dart:1077:20)
+#161    BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3114:19)
+#162    SliverMultiBoxAdaptorElement.createChild (package:flutter/src/widgets/sliver.dart:1067:12)
+#163    RenderSliverMultiBoxAdaptor._createOrObtainChild.<anonymous closure> (package:flutter/src/rendering/sliver_multi_box_adaptor.dart:368:23)
+#164    RenderObject.invokeLayoutCallback.<anonymous closure> (package:flutter/src/rendering/object.dart:3042:17)
+#165    PipelineOwner._enableMutationsToDirtySubtrees (package:flutter/src/rendering/object.dart:1223:15)
+#166    RenderObject.invokeLayoutCallback (package:flutter/src/rendering/object.dart:3041:14)
+#167    RenderSliverMultiBoxAdaptor._createOrObtainChild (package:flutter/src/rendering/sliver_multi_box_adaptor.dart:357:5)
+#168    RenderSliverMultiBoxAdaptor.insertAndLayoutChild (package:flutter/src/rendering/sliver_multi_box_adaptor.dart:517:5)
+#169    RenderSliverList.performLayout.advance (package:flutter/src/rendering/sliver_list.dart:238:19)
+#170    RenderSliverList.performLayout (package:flutter/src/rendering/sliver_list.dart:278:12)
+#171    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#172    RenderSliverEdgeInsetsPadding.performLayout (package:flutter/src/rendering/sliver_padding.dart:133:12)
+#173    RenderSliverPadding.performLayout (package:flutter/src/rendering/sliver_padding.dart:368:11)
+#174    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#175    RenderViewportBase.layoutChildSequence (package:flutter/src/rendering/viewport.dart:821:13)
+#176    RenderViewport._attemptLayout (package:flutter/src/rendering/viewport.dart:1831:12)
+#177    RenderViewport.performLayout (package:flutter/src/rendering/viewport.dart:1724:20)
+#178    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#179    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#180    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#181    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#182    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#183    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#184    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#185    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#186    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#187    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#188    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#189    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#190    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#191    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#192    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#193    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#194    _RenderCustomClip.performLayout (package:flutter/src/rendering/proxy_box.dart:1549:11)
+#195    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#196    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#197    RenderObject._layoutWithoutResize (package:flutter/src/rendering/object.dart:2771:7)
+#198    PipelineOwner.flushLayout (package:flutter/src/rendering/object.dart:1174:18)
+#199    PipelineOwner.flushLayout (package:flutter/src/rendering/object.dart:1187:15)
+#200    AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2434:27)
+#201    RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:558:5)
+#202    SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#203    SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#204    AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:2261:9)
+#205    _rootRun (dart:async/zone_root.dart:35:13)
+#206    _CustomZone.run (dart:async/zone.dart:810:35)
+#207    TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#208    AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:2250:27)
+#209    WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:719:23)
+<asynchronous suspension>
+#210    TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#211    main.<anonymous closure>.<anonymous closure> (file:///Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart:213:7)
+<asynchronous suspension>
+#212    testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#213    TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#214    StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+#0      throwProviderException (package:riverpod/src/common/stack_trace.dart:10:3)
+#1      $ResultError.valueOrProviderException (package:riverpod/src/common/result.dart:108:7)
+#2      Ref.watch (package:riverpod/src/core/ref.dart:733:27)
+#3      customerRecentTransactionsProvider.<anonymous closure> (package:cari_takip/features/transactions/presentation/transaction_providers.dart:33:8)
+#4      FunctionalFamily.call.<anonymous closure> (package:riverpod/src/core/family.dart:159:25)
+#5      FutureProvider.create (package:riverpod/src/providers/future_provider.dart:142:46)
+#6      $FutureProviderElement.create.<anonymous closure> (package:riverpod/src/providers/future_provider.dart:167:45)
+#7      ElementWithFuture.handleFuture.<anonymous closure> (package:riverpod/src/core/element.dart:218:30)
+#8      ElementWithFuture._handleAsync (package:riverpod/src/core/element.dart:282:35)
+#9      ElementWithFuture.handleFuture (package:riverpod/src/core/element.dart:212:12)
+#10     $FutureProviderElement.create (package:riverpod/src/providers/future_provider.dart:167:12)
+#11     ProviderElement.buildState (package:riverpod/src/core/element.dart:751:28)
+#12     ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#13     ProviderElement.flush (package:riverpod/src/core/element.dart:704:9)
+#14     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#15     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1141:26)
+#16     ConsumerStatefulElement.watch.<anonymous closure> (package:flutter_riverpod/src/core/consumer.dart:490:37)
+#17     _LinkedHashMapMixin.putIfAbsent (dart:_compact_hash:631:23)
+#18     ConsumerStatefulElement.watch (package:flutter_riverpod/src/core/consumer.dart:483:14)
+#19     _RecentTransactions.build (package:cari_takip/features/customers/presentation/customer_detail_page.dart:209:30)
+#20     _ConsumerState.build (package:flutter_riverpod/src/core/consumer.dart:283:48)
+#21     StatefulElement.build (package:flutter/src/widgets/framework.dart:5944:27)
+#22     ConsumerStatefulElement.build (package:flutter_riverpod/src/core/consumer.dart:460:20)
+#23     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5830:15)
+#24     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#25     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#26     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#27     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#28     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#29     ConsumerStatefulElement.mount (package:flutter_riverpod/src/core/consumer.dart:389:11)
+#30     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#31     MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7277:36)
+#32     MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7292:32)
+#33     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#34     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#35     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#36     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#37     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#38     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#39     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#40     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#41     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#42     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#43     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#44     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#45     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#46     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#47     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#48     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#49     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#50     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#51     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#52     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#53     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#54     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#55     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#56     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#57     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#58     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#59     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#60     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#61     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#62     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#63     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#64     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#65     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#66     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#67     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#68     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#69     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#70     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#71     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#72     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#73     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#74     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#75     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#76     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#77     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#78     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#79     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#80     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#81     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#82     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#83     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#84     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#85     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#86     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#87     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#88     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#89     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#90     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#91     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#92     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#93     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#94     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#95     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#96     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#97     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#98     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#99     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#100    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#101    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#102    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#103    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#104    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#105    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#106    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#107    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#108    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#109    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#110    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#111    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#112    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#113    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#114    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#115    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#116    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#117    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#118    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#119    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#120    StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#121    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#122    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#123    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#124    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#125    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#126    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#127    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#128    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#129    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#130    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#131    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#132    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#133    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#134    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#135    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#136    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#137    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#138    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#139    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#140    StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#141    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#142    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#143    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#144    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#145    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#146    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#147    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#148    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#149    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#150    SliverMultiBoxAdaptorElement.updateChild (package:flutter/src/widgets/sliver.dart:1092:37)
+#151    SliverMultiBoxAdaptorElement.createChild.<anonymous closure> (package:flutter/src/widgets/sliver.dart:1077:20)
+#152    BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3114:19)
+#153    SliverMultiBoxAdaptorElement.createChild (package:flutter/src/widgets/sliver.dart:1067:12)
+#154    RenderSliverMultiBoxAdaptor._createOrObtainChild.<anonymous closure> (package:flutter/src/rendering/sliver_multi_box_adaptor.dart:368:23)
+#155    RenderObject.invokeLayoutCallback.<anonymous closure> (package:flutter/src/rendering/object.dart:3042:17)
+#156    PipelineOwner._enableMutationsToDirtySubtrees (package:flutter/src/rendering/object.dart:1223:15)
+#157    RenderObject.invokeLayoutCallback (package:flutter/src/rendering/object.dart:3041:14)
+#158    RenderSliverMultiBoxAdaptor._createOrObtainChild (package:flutter/src/rendering/sliver_multi_box_adaptor.dart:357:5)
+#159    RenderSliverMultiBoxAdaptor.insertAndLayoutChild (package:flutter/src/rendering/sliver_multi_box_adaptor.dart:517:5)
+#160    RenderSliverList.performLayout.advance (package:flutter/src/rendering/sliver_list.dart:238:19)
+#161    RenderSliverList.performLayout (package:flutter/src/rendering/sliver_list.dart:278:12)
+#162    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#163    RenderSliverEdgeInsetsPadding.performLayout (package:flutter/src/rendering/sliver_padding.dart:133:12)
+#164    RenderSliverPadding.performLayout (package:flutter/src/rendering/sliver_padding.dart:368:11)
+#165    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#166    RenderViewportBase.layoutChildSequence (package:flutter/src/rendering/viewport.dart:821:13)
+#167    RenderViewport._attemptLayout (package:flutter/src/rendering/viewport.dart:1831:12)
+#168    RenderViewport.performLayout (package:flutter/src/rendering/viewport.dart:1724:20)
+#169    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#170    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#171    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#172    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#173    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#174    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#175    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#176    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#177    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#178    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#179    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#180    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#181    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#182    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#183    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#184    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#185    _RenderCustomClip.performLayout (package:flutter/src/rendering/proxy_box.dart:1549:11)
+#186    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#187    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#188    RenderObject._layoutWithoutResize (package:flutter/src/rendering/object.dart:2771:7)
+#189    PipelineOwner.flushLayout (package:flutter/src/rendering/object.dart:1174:18)
+#190    PipelineOwner.flushLayout (package:flutter/src/rendering/object.dart:1187:15)
+#191    AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2434:27)
+#192    RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:558:5)
+#193    SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#194    SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#195    AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:2261:9)
+#196    _rootRun (dart:async/zone_root.dart:35:13)
+#197    _CustomZone.run (dart:async/zone.dart:810:35)
+#198    TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#199    AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:2250:27)
+#200    WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:719:23)
+<asynchronous suspension>
+#201    TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#202    main.<anonymous closure>.<anonymous closure> (file:///Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart:213:7)
+<asynchronous suspension>
+#203    testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#204    TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#205    StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+[AppError] ProviderException: Tried to use a provider that is in error state.
+
+A provider threw the following exception:
+UnimplementedError: appDatabaseProvider, main() içinde override edilmelidir.
+
+The stack trace of the exception:
+#0      appDatabaseProvider.<anonymous closure> (package:cari_takip/core/database/database_provider.dart:6:12)
+#1      Provider.create (package:riverpod/src/providers/provider.dart:59:36)
+#2      $ProviderElement.create (package:riverpod/src/providers/provider.dart:343:33)
+#3      ProviderElement.buildState (package:riverpod/src/core/element.dart:751:28)
+#4      ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#5      ProviderElement.flush (package:riverpod/src/core/element.dart:704:9)
+#6      $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#7      ProviderElement.listen (package:riverpod/src/core/element.dart:991:28)
+#8      Ref.watch (package:riverpod/src/core/ref.dart:726:20)
+#9      transactionRepositoryProvider.<anonymous closure> (package:cari_takip/features/transactions/presentation/transaction_providers.dart:12:44)
+#10     Provider.create (package:riverpod/src/providers/provider.dart:59:36)
+#11     $ProviderElement.create (package:riverpod/src/providers/provider.dart:343:33)
+#12     ProviderElement.buildState (package:riverpod/src/core/element.dart:751:28)
+#13     ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#14     ProviderElement.flush (package:riverpod/src/core/element.dart:704:9)
+#15     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#16     ProviderElement.listen (package:riverpod/src/core/element.dart:991:28)
+#17     Ref.watch (package:riverpod/src/core/ref.dart:726:20)
+#18     customerRecentTransactionsProvider.<anonymous closure> (package:cari_takip/features/transactions/presentation/transaction_providers.dart:33:8)
+#19     FunctionalFamily.call.<anonymous closure> (package:riverpod/src/core/family.dart:159:25)
+#20     FutureProvider.create (package:riverpod/src/providers/future_provider.dart:142:46)
+#21     $FutureProviderElement.create.<anonymous closure> (package:riverpod/src/providers/future_provider.dart:167:45)
+#22     ElementWithFuture.handleFuture.<anonymous closure> (package:riverpod/src/core/element.dart:218:30)
+#23     ElementWithFuture._handleAsync (package:riverpod/src/core/element.dart:282:35)
+#24     ElementWithFuture.handleFuture (package:riverpod/src/core/element.dart:212:12)
+#25     $FutureProviderElement.create (package:riverpod/src/providers/future_provider.dart:167:12)
+#26     ProviderElement.buildState (package:riverpod/src/core/element.dart:751:28)
+#27     ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#28     ProviderElement.flush (package:riverpod/src/core/element.dart:704:9)
+#29     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#30     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1141:26)
+#31     ConsumerStatefulElement.watch.<anonymous closure> (package:flutter_riverpod/src/core/consumer.dart:490:37)
+#32     _LinkedHashMapMixin.putIfAbsent (dart:_compact_hash:631:23)
+#33     ConsumerStatefulElement.watch (package:flutter_riverpod/src/core/consumer.dart:483:14)
+#34     _RecentTransactions.build (package:cari_takip/features/customers/presentation/customer_detail_page.dart:209:30)
+#35     _ConsumerState.build (package:flutter_riverpod/src/core/consumer.dart:283:48)
+#36     StatefulElement.build (package:flutter/src/widgets/framework.dart:5944:27)
+#37     ConsumerStatefulElement.build (package:flutter_riverpod/src/core/consumer.dart:460:20)
+#38     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5830:15)
+#39     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#40     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#41     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#42     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#43     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#44     ConsumerStatefulElement.mount (package:flutter_riverpod/src/core/consumer.dart:389:11)
+#45     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#46     MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7277:36)
+#47     MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7292:32)
+#48     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#49     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#50     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#51     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#52     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#53     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#54     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#55     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#56     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#57     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#58     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#59     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#60     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#61     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#62     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#63     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#64     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#65     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#66     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#67     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#68     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#69     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#70     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#71     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#72     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#73     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#74     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#75     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#76     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#77     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#78     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#79     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#80     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#81     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#82     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#83     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#84     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#85     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#86     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#87     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#88     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#89     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#90     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#91     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#92     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#93     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#94     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#95     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#96     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#97     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#98     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#99     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#100    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#101    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#102    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#103    StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#104    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#105    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#106    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#107    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#108    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#109    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#110    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#111    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#112    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#113    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#114    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#115    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#116    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#117    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#118    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#119    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#120    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#121    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#122    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#123    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#124    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#125    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#126    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#127    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#128    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#129    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#130    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#131    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#132    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#133    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#134    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#135    StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#136    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#137    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#138    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#139    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#140    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#141    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#142    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#143    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#144    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#145    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#146    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#147    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#148    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#149    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#150    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#151    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#152    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#153    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#154    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#155    StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#156    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#157    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#158    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#159    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#160    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#161    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#162    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#163    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#164    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#165    SliverMultiBoxAdaptorElement.updateChild (package:flutter/src/widgets/sliver.dart:1092:37)
+#166    SliverMultiBoxAdaptorElement.createChild.<anonymous closure> (package:flutter/src/widgets/sliver.dart:1077:20)
+#167    BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3114:19)
+#168    SliverMultiBoxAdaptorElement.createChild (package:flutter/src/widgets/sliver.dart:1067:12)
+#169    RenderSliverMultiBoxAdaptor._createOrObtainChild.<anonymous closure> (package:flutter/src/rendering/sliver_multi_box_adaptor.dart:368:23)
+#170    RenderObject.invokeLayoutCallback.<anonymous closure> (package:flutter/src/rendering/object.dart:3042:17)
+#171    PipelineOwner._enableMutationsToDirtySubtrees (package:flutter/src/rendering/object.dart:1223:15)
+#172    RenderObject.invokeLayoutCallback (package:flutter/src/rendering/object.dart:3041:14)
+#173    RenderSliverMultiBoxAdaptor._createOrObtainChild (package:flutter/src/rendering/sliver_multi_box_adaptor.dart:357:5)
+#174    RenderSliverMultiBoxAdaptor.insertAndLayoutChild (package:flutter/src/rendering/sliver_multi_box_adaptor.dart:517:5)
+#175    RenderSliverList.performLayout.advance (package:flutter/src/rendering/sliver_list.dart:238:19)
+#176    RenderSliverList.performLayout (package:flutter/src/rendering/sliver_list.dart:278:12)
+#177    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#178    RenderSliverEdgeInsetsPadding.performLayout (package:flutter/src/rendering/sliver_padding.dart:133:12)
+#179    RenderSliverPadding.performLayout (package:flutter/src/rendering/sliver_padding.dart:368:11)
+#180    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#181    RenderViewportBase.layoutChildSequence (package:flutter/src/rendering/viewport.dart:821:13)
+#182    RenderViewport._attemptLayout (package:flutter/src/rendering/viewport.dart:1831:12)
+#183    RenderViewport.performLayout (package:flutter/src/rendering/viewport.dart:1724:20)
+#184    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#185    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#186    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#187    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#188    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#189    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#190    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#191    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#192    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#193    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#194    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#195    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#196    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#197    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#198    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#199    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#200    _RenderCustomClip.performLayout (package:flutter/src/rendering/proxy_box.dart:1549:11)
+#201    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#202    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#203    RenderObject._layoutWithoutResize (package:flutter/src/rendering/object.dart:2771:7)
+#204    PipelineOwner.flushLayout (package:flutter/src/rendering/object.dart:1174:18)
+#205    PipelineOwner.flushLayout (package:flutter/src/rendering/object.dart:1187:15)
+#206    AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2434:27)
+#207    RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:558:5)
+#208    SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#209    SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#210    AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:2261:9)
+#211    _rootRun (dart:async/zone_root.dart:35:13)
+#212    _CustomZone.run (dart:async/zone.dart:810:35)
+#213    TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#214    AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:2250:27)
+#215    WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:719:23)
+<asynchronous suspension>
+#216    TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#217    main.<anonymous closure>.<anonymous closure> (file:///Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart:213:7)
+<asynchronous suspension>
+#218    testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#219    TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#220    StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+
+And rethrown at:
+#0      throwProviderException (package:riverpod/src/common/stack_trace.dart:10:3)
+#1      $ResultError.valueOrProviderException (package:riverpod/src/common/result.dart:108:7)
+#2      Ref.watch (package:riverpod/src/core/ref.dart:733:27)
+#3      transactionRepositoryProvider.<anonymous closure> (package:cari_takip/features/transactions/presentation/transaction_providers.dart:12:44)
+#4      Provider.create (package:riverpod/src/providers/provider.dart:59:36)
+#5      $ProviderElement.create (package:riverpod/src/providers/provider.dart:343:33)
+#6      ProviderElement.buildState (package:riverpod/src/core/element.dart:751:28)
+#7      ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#8      ProviderElement.flush (package:riverpod/src/core/element.dart:704:9)
+#9      $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#10     ProviderElement.listen (package:riverpod/src/core/element.dart:991:28)
+#11     Ref.watch (package:riverpod/src/core/ref.dart:726:20)
+#12     customerRecentTransactionsProvider.<anonymous closure> (package:cari_takip/features/transactions/presentation/transaction_providers.dart:33:8)
+#13     FunctionalFamily.call.<anonymous closure> (package:riverpod/src/core/family.dart:159:25)
+#14     FutureProvider.create (package:riverpod/src/providers/future_provider.dart:142:46)
+#15     $FutureProviderElement.create.<anonymous closure> (package:riverpod/src/providers/future_provider.dart:167:45)
+#16     ElementWithFuture.handleFuture.<anonymous closure> (package:riverpod/src/core/element.dart:218:30)
+#17     ElementWithFuture._handleAsync (package:riverpod/src/core/element.dart:282:35)
+#18     ElementWithFuture.handleFuture (package:riverpod/src/core/element.dart:212:12)
+#19     $FutureProviderElement.create (package:riverpod/src/providers/future_provider.dart:167:12)
+#20     ProviderElement.buildState (package:riverpod/src/core/element.dart:751:28)
+#21     ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#22     ProviderElement.flush (package:riverpod/src/core/element.dart:704:9)
+#23     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#24     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1141:26)
+#25     ConsumerStatefulElement.watch.<anonymous closure> (package:flutter_riverpod/src/core/consumer.dart:490:37)
+#26     _LinkedHashMapMixin.putIfAbsent (dart:_compact_hash:631:23)
+#27     ConsumerStatefulElement.watch (package:flutter_riverpod/src/core/consumer.dart:483:14)
+#28     _RecentTransactions.build (package:cari_takip/features/customers/presentation/customer_detail_page.dart:209:30)
+#29     _ConsumerState.build (package:flutter_riverpod/src/core/consumer.dart:283:48)
+#30     StatefulElement.build (package:flutter/src/widgets/framework.dart:5944:27)
+#31     ConsumerStatefulElement.build (package:flutter_riverpod/src/core/consumer.dart:460:20)
+#32     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5830:15)
+#33     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#34     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#35     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#36     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#37     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#38     ConsumerStatefulElement.mount (package:flutter_riverpod/src/core/consumer.dart:389:11)
+#39     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#40     MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7277:36)
+#41     MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7292:32)
+#42     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#43     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#44     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#45     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#46     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#47     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#48     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#49     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#50     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#51     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#52     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#53     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#54     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#55     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#56     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#57     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#58     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#59     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#60     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#61     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#62     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#63     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#64     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#65     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#66     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#67     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#68     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#69     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#70     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#71     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#72     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#73     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#74     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#75     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#76     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#77     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#78     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#79     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#80     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#81     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#82     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#83     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#84     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#85     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#86     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#87     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#88     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#89     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#90     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#91     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#92     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#93     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#94     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#95     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#96     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#97     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#98     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#99     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#100    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#101    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#102    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#103    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#104    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#105    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#106    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#107    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#108    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#109    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#110    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#111    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#112    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#113    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#114    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#115    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#116    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#117    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#118    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#119    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#120    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#121    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#122    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#123    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#124    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#125    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#126    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#127    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#128    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#129    StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#130    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#131    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#132    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#133    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#134    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#135    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#136    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#137    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#138    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#139    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#140    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#141    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#142    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#143    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#144    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#145    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#146    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#147    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#148    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#149    StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#150    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#151    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#152    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#153    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#154    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#155    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#156    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#157    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#158    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#159    SliverMultiBoxAdaptorElement.updateChild (package:flutter/src/widgets/sliver.dart:1092:37)
+#160    SliverMultiBoxAdaptorElement.createChild.<anonymous closure> (package:flutter/src/widgets/sliver.dart:1077:20)
+#161    BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3114:19)
+#162    SliverMultiBoxAdaptorElement.createChild (package:flutter/src/widgets/sliver.dart:1067:12)
+#163    RenderSliverMultiBoxAdaptor._createOrObtainChild.<anonymous closure> (package:flutter/src/rendering/sliver_multi_box_adaptor.dart:368:23)
+#164    RenderObject.invokeLayoutCallback.<anonymous closure> (package:flutter/src/rendering/object.dart:3042:17)
+#165    PipelineOwner._enableMutationsToDirtySubtrees (package:flutter/src/rendering/object.dart:1223:15)
+#166    RenderObject.invokeLayoutCallback (package:flutter/src/rendering/object.dart:3041:14)
+#167    RenderSliverMultiBoxAdaptor._createOrObtainChild (package:flutter/src/rendering/sliver_multi_box_adaptor.dart:357:5)
+#168    RenderSliverMultiBoxAdaptor.insertAndLayoutChild (package:flutter/src/rendering/sliver_multi_box_adaptor.dart:517:5)
+#169    RenderSliverList.performLayout.advance (package:flutter/src/rendering/sliver_list.dart:238:19)
+#170    RenderSliverList.performLayout (package:flutter/src/rendering/sliver_list.dart:278:12)
+#171    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#172    RenderSliverEdgeInsetsPadding.performLayout (package:flutter/src/rendering/sliver_padding.dart:133:12)
+#173    RenderSliverPadding.performLayout (package:flutter/src/rendering/sliver_padding.dart:368:11)
+#174    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#175    RenderViewportBase.layoutChildSequence (package:flutter/src/rendering/viewport.dart:821:13)
+#176    RenderViewport._attemptLayout (package:flutter/src/rendering/viewport.dart:1831:12)
+#177    RenderViewport.performLayout (package:flutter/src/rendering/viewport.dart:1724:20)
+#178    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#179    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#180    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#181    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#182    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#183    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#184    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#185    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#186    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#187    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#188    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#189    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#190    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#191    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#192    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#193    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#194    _RenderCustomClip.performLayout (package:flutter/src/rendering/proxy_box.dart:1549:11)
+#195    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#196    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#197    RenderObject._layoutWithoutResize (package:flutter/src/rendering/object.dart:2771:7)
+#198    PipelineOwner.flushLayout (package:flutter/src/rendering/object.dart:1174:18)
+#199    PipelineOwner.flushLayout (package:flutter/src/rendering/object.dart:1187:15)
+#200    AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2434:27)
+#201    RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:558:5)
+#202    SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#203    SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#204    AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:2261:9)
+#205    _rootRun (dart:async/zone_root.dart:35:13)
+#206    _CustomZone.run (dart:async/zone.dart:810:35)
+#207    TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#208    AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:2250:27)
+#209    WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:719:23)
+<asynchronous suspension>
+#210    TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#211    main.<anonymous closure>.<anonymous closure> (file:///Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart:213:7)
+<asynchronous suspension>
+#212    testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#213    TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#214    StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+#0      throwProviderException (package:riverpod/src/common/stack_trace.dart:10:3)
+#1      $ResultError.valueOrProviderException (package:riverpod/src/common/result.dart:108:7)
+#2      Ref.watch (package:riverpod/src/core/ref.dart:733:27)
+#3      customerRecentTransactionsProvider.<anonymous closure> (package:cari_takip/features/transactions/presentation/transaction_providers.dart:33:8)
+#4      FunctionalFamily.call.<anonymous closure> (package:riverpod/src/core/family.dart:159:25)
+#5      FutureProvider.create (package:riverpod/src/providers/future_provider.dart:142:46)
+#6      $FutureProviderElement.create.<anonymous closure> (package:riverpod/src/providers/future_provider.dart:167:45)
+#7      ElementWithFuture.handleFuture.<anonymous closure> (package:riverpod/src/core/element.dart:218:30)
+#8      ElementWithFuture._handleAsync (package:riverpod/src/core/element.dart:282:35)
+#9      ElementWithFuture.handleFuture (package:riverpod/src/core/element.dart:212:12)
+#10     $FutureProviderElement.create (package:riverpod/src/providers/future_provider.dart:167:12)
+#11     ProviderElement.buildState (package:riverpod/src/core/element.dart:751:28)
+#12     ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#13     ProviderElement.flush (package:riverpod/src/core/element.dart:704:9)
+#14     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#15     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1141:26)
+#16     ConsumerStatefulElement.watch.<anonymous closure> (package:flutter_riverpod/src/core/consumer.dart:490:37)
+#17     _LinkedHashMapMixin.putIfAbsent (dart:_compact_hash:631:23)
+#18     ConsumerStatefulElement.watch (package:flutter_riverpod/src/core/consumer.dart:483:14)
+#19     _RecentTransactions.build (package:cari_takip/features/customers/presentation/customer_detail_page.dart:209:30)
+#20     _ConsumerState.build (package:flutter_riverpod/src/core/consumer.dart:283:48)
+#21     StatefulElement.build (package:flutter/src/widgets/framework.dart:5944:27)
+#22     ConsumerStatefulElement.build (package:flutter_riverpod/src/core/consumer.dart:460:20)
+#23     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5830:15)
+#24     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#25     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#26     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#27     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#28     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#29     ConsumerStatefulElement.mount (package:flutter_riverpod/src/core/consumer.dart:389:11)
+#30     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#31     MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7277:36)
+#32     MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7292:32)
+#33     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#34     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#35     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#36     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#37     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#38     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#39     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#40     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#41     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#42     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#43     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#44     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#45     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#46     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#47     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#48     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#49     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#50     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#51     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#52     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#53     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#54     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#55     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#56     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#57     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#58     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#59     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#60     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#61     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#62     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#63     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#64     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#65     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#66     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#67     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#68     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#69     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#70     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#71     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#72     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#73     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#74     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#75     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#76     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#77     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#78     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#79     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#80     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#81     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#82     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#83     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#84     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#85     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#86     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#87     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#88     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#89     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#90     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#91     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#92     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#93     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#94     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#95     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#96     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#97     Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#98     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#99     Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#100    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#101    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#102    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#103    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#104    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#105    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#106    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#107    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#108    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#109    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#110    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#111    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#112    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#113    SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7128:14)
+#114    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#115    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#116    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#117    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#118    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#119    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#120    StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#121    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#122    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#123    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#124    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#125    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#126    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#127    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#128    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#129    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#130    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#131    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#132    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#133    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#134    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#135    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#136    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#137    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5995:11)
+#138    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#139    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#140    StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5986:11)
+#141    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#142    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#143    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#144    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#145    Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#146    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5812:5)
+#147    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#148    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#149    Element.updateChild (package:flutter/src/widgets/framework.dart:4072:18)
+#150    SliverMultiBoxAdaptorElement.updateChild (package:flutter/src/widgets/sliver.dart:1092:37)
+#151    SliverMultiBoxAdaptorElement.createChild.<anonymous closure> (package:flutter/src/widgets/sliver.dart:1077:20)
+#152    BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3114:19)
+#153    SliverMultiBoxAdaptorElement.createChild (package:flutter/src/widgets/sliver.dart:1067:12)
+#154    RenderSliverMultiBoxAdaptor._createOrObtainChild.<anonymous closure> (package:flutter/src/rendering/sliver_multi_box_adaptor.dart:368:23)
+#155    RenderObject.invokeLayoutCallback.<anonymous closure> (package:flutter/src/rendering/object.dart:3042:17)
+#156    PipelineOwner._enableMutationsToDirtySubtrees (package:flutter/src/rendering/object.dart:1223:15)
+#157    RenderObject.invokeLayoutCallback (package:flutter/src/rendering/object.dart:3041:14)
+#158    RenderSliverMultiBoxAdaptor._createOrObtainChild (package:flutter/src/rendering/sliver_multi_box_adaptor.dart:357:5)
+#159    RenderSliverMultiBoxAdaptor.insertAndLayoutChild (package:flutter/src/rendering/sliver_multi_box_adaptor.dart:517:5)
+#160    RenderSliverList.performLayout.advance (package:flutter/src/rendering/sliver_list.dart:238:19)
+#161    RenderSliverList.performLayout (package:flutter/src/rendering/sliver_list.dart:278:12)
+#162    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#163    RenderSliverEdgeInsetsPadding.performLayout (package:flutter/src/rendering/sliver_padding.dart:133:12)
+#164    RenderSliverPadding.performLayout (package:flutter/src/rendering/sliver_padding.dart:368:11)
+#165    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#166    RenderViewportBase.layoutChildSequence (package:flutter/src/rendering/viewport.dart:821:13)
+#167    RenderViewport._attemptLayout (package:flutter/src/rendering/viewport.dart:1831:12)
+#168    RenderViewport.performLayout (package:flutter/src/rendering/viewport.dart:1724:20)
+#169    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#170    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#171    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#172    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#173    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#174    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#175    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#176    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#177    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#178    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#179    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#180    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#181    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#182    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#183    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#184    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#185    _RenderCustomClip.performLayout (package:flutter/src/rendering/proxy_box.dart:1549:11)
+#186    RenderObject.layout (package:flutter/src/rendering/object.dart:2923:7)
+#187    RenderProxyBoxMixin.performLayout (package:flutter/src/rendering/proxy_box.dart:118:18)
+#188    RenderObject._layoutWithoutResize (package:flutter/src/rendering/object.dart:2771:7)
+#189    PipelineOwner.flushLayout (package:flutter/src/rendering/object.dart:1174:18)
+#190    PipelineOwner.flushLayout (package:flutter/src/rendering/object.dart:1187:15)
+#191    AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2434:27)
+#192    RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:558:5)
+#193    SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#194    SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#195    AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:2261:9)
+#196    _rootRun (dart:async/zone_root.dart:35:13)
+#197    _CustomZone.run (dart:async/zone.dart:810:35)
+#198    TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#199    AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:2250:27)
+#200    WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:719:23)
+<asynchronous suspension>
+#201    TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#202    main.<anonymous closure>.<anonymous closure> (file:///Users/burcubalta/Desktop/development/cari_takip/test/app/app_shell_test.dart:213:7)
+<asynchronous suspension>
+#203    testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#204    TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#205    StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+00:03 +166: /Users/burcubalta/Desktop/development/cari_takip/test/features/customers/presentation/customer_pages_test.dart: liste cari yoksa empty state ve yönlendirme gösterir
+00:03 +167: /Users/burcubalta/Desktop/development/cari_takip/test/features/customers/presentation/customer_pages_test.dart: liste cari yoksa empty state ve yönlendirme gösterir
+00:03 +168: /Users/burcubalta/Desktop/development/cari_takip/test/features/customers/presentation/customer_pages_test.dart: liste cari yoksa empty state ve yönlendirme gösterir
+00:03 +169: /Users/burcubalta/Desktop/development/cari_takip/test/features/customers/presentation/customer_pages_test.dart: liste cari yoksa empty state ve yönlendirme gösterir
+00:03 +170: /Users/burcubalta/Desktop/development/cari_takip/test/features/customers/presentation/customer_pages_test.dart: liste cari yoksa empty state ve yönlendirme gösterir
+00:03 +171: /Users/burcubalta/Desktop/development/cari_takip/test/features/customers/presentation/customer_pages_test.dart: liste cari yoksa empty state ve yönlendirme gösterir
+00:03 +172: /Users/burcubalta/Desktop/development/cari_takip/test/features/customers/presentation/customer_pages_test.dart: liste cari yoksa empty state ve yönlendirme gösterir
+00:03 +173: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +174: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +175: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +176: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +177: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +178: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +179: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +180: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +181: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +182: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +183: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +184: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +185: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +186: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +187: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +188: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +189: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +190: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +191: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +192: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +193: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: özet kartlarını doğru değerlerle gösterir
+00:03 +194: /Users/burcubalta/Desktop/development/cari_takip/test/features/customers/presentation/customer_pages_test.dart: liste varsayılan olarak yalnızca aktif carileri listeler
+00:03 +195: /Users/burcubalta/Desktop/development/cari_takip/test/features/customers/presentation/customer_pages_test.dart: liste varsayılan olarak yalnızca aktif carileri listeler
+00:03 +196: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 1366x768 pencerede bozulmaz
+00:03 +197: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 1366x768 pencerede bozulmaz
+00:04 +198: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 1366x768 pencerede bozulmaz
+00:04 +199: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 1366x768 pencerede bozulmaz
+00:04 +200: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 1366x768 pencerede bozulmaz
+00:04 +201: /Users/burcubalta/Desktop/development/cari_takip/test/features/settings/presentation/settings_page_test.dart: manuel yedek Konum Seçerek Yedekle seçilen yola yazar
+00:04 +202: /Users/burcubalta/Desktop/development/cari_takip/test/features/customers/presentation/customer_pages_test.dart: liste pasife alma onay ister ve cariyi aktif listeden çıkarır
+00:04 +203: /Users/burcubalta/Desktop/development/cari_takip/test/features/customers/presentation/customer_pages_test.dart: liste pasife alma onay ister ve cariyi aktif listeden çıkarır
+00:04 +204: /Users/burcubalta/Desktop/development/cari_takip/test/features/customers/presentation/customer_pages_test.dart: liste pasife alma onay ister ve cariyi aktif listeden çıkarır
+00:04 +205: /Users/burcubalta/Desktop/development/cari_takip/test/features/customers/presentation/customer_pages_test.dart: liste pasife alma onay ister ve cariyi aktif listeden çıkarır
+00:04 +206: /Users/burcubalta/Desktop/development/cari_takip/test/features/customers/presentation/customer_pages_test.dart: liste pasife alma onay ister ve cariyi aktif listeden çıkarır
+00:04 +207: /Users/burcubalta/Desktop/development/cari_takip/test/features/customers/presentation/customer_pages_test.dart: liste pasife alma onay ister ve cariyi aktif listeden çıkarır
+00:04 +208: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: hiç cari yokken cari ekleme yönlendirmesi gösterir
+00:04 +209: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: hiç cari yokken cari ekleme yönlendirmesi gösterir
+00:04 +210: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: hiç cari yokken cari ekleme yönlendirmesi gösterir
+00:04 +211: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: hiç cari yokken cari ekleme yönlendirmesi gösterir
+00:04 +212: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: hiç cari yokken cari ekleme yönlendirmesi gösterir
+00:04 +213: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: hiç cari yokken cari ekleme yönlendirmesi gösterir
+00:04 +214: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: hiç cari yokken cari ekleme yönlendirmesi gösterir
+00:04 +215: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: hiç cari yokken cari ekleme yönlendirmesi gösterir
+00:04 +216: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: hiç cari yokken cari ekleme yönlendirmesi gösterir
+00:04 +217: /Users/burcubalta/Desktop/development/cari_takip/test/features/dashboard/presentation/dashboard_page_test.dart: hiç cari yokken cari ekleme yönlendirmesi gösterir
+00:04 +218: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 1920x1080 pencerede bozulmaz
+00:04 +219: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 1920x1080 pencerede bozulmaz
+00:04 +220: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 1920x1080 pencerede bozulmaz
+00:04 +221: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar 1920x1080 pencerede bozulmaz
+00:04 +222: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste kayıt yoksa empty state gösterir ve forma yönlendirir
+00:04 +223: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste kayıt yoksa empty state gösterir ve forma yönlendirir
+00:04 +224: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste kayıt yoksa empty state gösterir ve forma yönlendirir
+00:04 +225: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste kayıt yoksa empty state gösterir ve forma yönlendirir
+00:04 +226: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste kayıt yoksa empty state gösterir ve forma yönlendirir
+00:04 +227: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste kayıt yoksa empty state gösterir ve forma yönlendirir
+00:04 +228: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste kayıt yoksa empty state gösterir ve forma yönlendirir
+00:04 +229: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste kayıt yoksa empty state gösterir ve forma yönlendirir
+00:04 +230: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste kayıt yoksa empty state gösterir ve forma yönlendirir
+00:04 +231: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste kayıt yoksa empty state gösterir ve forma yönlendirir
+00:05 +232: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste kayıt yoksa empty state gösterir ve forma yönlendirir
+00:05 +233: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste kayıt yoksa empty state gösterir ve forma yönlendirir
+00:05 +234: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste kayıt yoksa empty state gösterir ve forma yönlendirir
+00:05 +235: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste kayıt yoksa empty state gösterir ve forma yönlendirir
+00:05 +236: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste kayıt yoksa empty state gösterir ve forma yönlendirir
+00:05 +237: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste kayıt yoksa empty state gösterir ve forma yönlendirir
+00:05 +238: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste kayıt yoksa empty state gösterir ve forma yönlendirir
+00:05 +239: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste kayıt yoksa empty state gösterir ve forma yönlendirir
+00:05 +240: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar en küçük pencere ve 1,3x yazıda bozulmaz
+00:05 +241: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar en küçük pencere ve 1,3x yazıda bozulmaz
+00:05 +242: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar en küçük pencere ve 1,3x yazıda bozulmaz
+00:05 +243: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar en küçük pencere ve 1,3x yazıda bozulmaz
+00:05 +244: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar en küçük pencere ve 1,3x yazıda bozulmaz
+00:05 +245: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar en küçük pencere ve 1,3x yazıda bozulmaz
+00:05 +246: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar en küçük pencere ve 1,3x yazıda bozulmaz
+00:05 +247: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar en küçük pencere ve 1,3x yazıda bozulmaz
+00:05 +248: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar en küçük pencere ve 1,3x yazıda bozulmaz
+00:05 +249: /Users/burcubalta/Desktop/development/cari_takip/test/app/window_sizes_test.dart: tüm ekranlar en küçük pencere ve 1,3x yazıda bozulmaz
+00:05 +250: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: liste tip yoksa empty state ve yönlendirme gösterir
+00:05 +251: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: liste tip yoksa empty state ve yönlendirme gösterir
+00:05 +252: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: liste tip yoksa empty state ve yönlendirme gösterir
+00:05 +253: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: liste tip yoksa empty state ve yönlendirme gösterir
+00:05 +254: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: liste tip yoksa empty state ve yönlendirme gösterir
+00:05 +255: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: liste tip yoksa empty state ve yönlendirme gösterir
+00:05 +256: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: liste tip yoksa empty state ve yönlendirme gösterir
+00:05 +257: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: liste tip yoksa empty state ve yönlendirme gösterir
+00:05 +258: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: liste tip yoksa empty state ve yönlendirme gösterir
+00:05 +259: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: liste tip yoksa empty state ve yönlendirme gösterir
+00:05 +260: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: liste tip yoksa empty state ve yönlendirme gösterir
+00:05 +261: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: liste tip yoksa empty state ve yönlendirme gösterir
+00:05 +262: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: liste tip yoksa empty state ve yönlendirme gösterir
+00:06 +263: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: liste tip yoksa empty state ve yönlendirme gösterir
+00:06 +264: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: liste tip yoksa empty state ve yönlendirme gösterir
+00:06 +265: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: liste tip yoksa empty state ve yönlendirme gösterir
+00:06 +266: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste eşleşme yoksa filtre mesajı gösterir
+00:06 +267: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: liste eşleşme yoksa filtre mesajı gösterir
+00:06 +268: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: başlangıçta yönlendirme mesajı gösterir
+00:06 +269: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: başlangıçta yönlendirme mesajı gösterir
+00:06 +270: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: başlangıçta yönlendirme mesajı gösterir
+00:06 +271: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: başlangıçta yönlendirme mesajı gösterir
+00:06 +272: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: başlangıçta yönlendirme mesajı gösterir
+00:06 +273: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: başlangıçta yönlendirme mesajı gösterir
+00:06 +274: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: başlangıçta yönlendirme mesajı gösterir
+00:06 +275: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: başlangıçta yönlendirme mesajı gösterir
+00:06 +276: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: başlangıçta yönlendirme mesajı gösterir
+00:06 +277: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: başlangıçta yönlendirme mesajı gösterir
+00:06 +278: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: başlangıçta yönlendirme mesajı gösterir
+00:06 +279: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: başlangıçta yönlendirme mesajı gösterir
+00:06 +280: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: form geçersiz ve sıfır tutar reddedilir
+00:06 +281: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: form geçersiz ve sıfır tutar reddedilir
+00:06 +282: /Users/burcubalta/Desktop/development/cari_takip/test/features/customers/presentation/customer_pages_test.dart: detay Yeni Hareket Ekle cariyi önceden seçili açar
+00:06 +283: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: cari seçilmeden raporlanamaz
+00:06 +284: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: form boş ad ile kaydedilemez
+00:06 +285: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: form yeni hareket kuruşa çevrilerek kaydedilir
+00:07 +286: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: form yeni hareket kuruşa çevrilerek kaydedilir
+00:07 +287: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: form yeni hareket kuruşa çevrilerek kaydedilir
+00:07 +288: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: cari raporu satırları, sayıyı ve toplamı gösterir
+00:07 +289: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: cari raporu satırları, sayıyı ve toplamı gösterir
+00:07 +290: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: form tarih seçici ile tarih değiştirilebilir
+00:07 +291: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: form tarih seçici ile tarih değiştirilebilir
+00:07 +292: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: işlem tipi filtresi sonucu ve toplamı daraltır
+00:07 +293: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: form düzenleme mevcut adla açılır ve yeniden adlandırır
+00:07 +294: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: form yeni kayıtta yalnızca aktif cari ve tipler seçilebilir
+00:07 +295: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: başlangıç tarihi filtresi sonucu süzer
+00:07 +296: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: başlangıç tarihi filtresi sonucu süzer
+00:07 +297: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: başlangıç tarihi filtresi sonucu süzer
+00:07 +298: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: başlangıç tarihi filtresi sonucu süzer
+00:07 +299: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: form düzenleme mevcut değerlerle açılır ve günceller
+00:07 +300: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: form Ctrl+Enter ile kaydedilir
+00:07 +301: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: eşleşme yoksa mesaj ve sıfır toplam gösterir
+00:08 +302: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: eşleşme yoksa mesaj ve sıfır toplam gösterir
+00:08 +303: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: form Esc ile vazgeçilir ve liste ekranına dönülür
+00:08 +304: /Users/burcubalta/Desktop/development/cari_takip/test/features/transaction_types/presentation/transaction_type_pages_test.dart: form başka tipin adına yeniden adlandırma reddedilir
+00:08 +305: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: filtre değişince uyarı çıkar, tekrar Raporla ile güncellenir
+00:08 +306: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: form Ctrl+Enter ile kaydedilir
+00:08 +307: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: Temizle seçimleri ve sonucu sıfırlar
+00:08 +308: /Users/burcubalta/Desktop/development/cari_takip/test/features/reports/presentation/report_page_test.dart: Temizle seçimleri ve sonucu sıfırlar
+00:08 +309: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: form en küçük pencerede cari seçici diyaloğu taşmaz
+
+Warning: A call to tap() with finder "Found 1 widget with text "Finans Hareketleri" descending from widget with type "NavigationRail": [
+  Text("Finans Hareketleri", dependencies: [DefaultSelectionStyle, DefaultTextStyle, MediaQuery]),
+]" derived an Offset (Offset(0.0, 152.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderParagraph#60833 NEEDS-PAINT
+The hit test result at that offset is: HitTestResult(RenderPointerListener#20aa7@Offset(0.0, 0.0), RenderSemanticsAnnotations#36cc1@Offset(0.0, 0.0), RenderMouseRegion#13b75@Offset(0.0, 0.0), RenderSemanticsAnnotations#55520@Offset(0.0, 0.0), _RenderInkFeatures#4195d@Offset(0.0, 0.0), RenderCustomPaint#68098@Offset(0.0, 0.0), RenderClipPath#48ead@Offset(0.0, 0.0), RenderStack#7c815@Offset(0.0, 0.0), RenderSemanticsAnnotations#64374@Offset(0.0, 0.0), RenderFlex#c3c22@Offset(0.0, 88.0), RenderPositionedBox#fd13b@Offset(0.0, 88.0), RenderFlex#3e084@Offset(0.0, 152.0), RenderPadding#6883f@Offset(0.0, 152.0), _RenderInkFeatures#3ac5d@Offset(0.0, 152.0), RenderPhysicalModel#b1e07@Offset(0.0, 152.0), RenderSemanticsAnnotations#89ded@Offset(0.0, 152.0), RenderSemanticsAnnotations#1a58d@Offset(0.0, 152.0), RenderFlex#844fd@Offset(0.0, 152.0), RenderConstrainedBox#2c8a9@Offset(0.0, 152.0), RenderFlex#b5292@Offset(0.0, 152.0), _RenderLayoutBuilder#a4fe7@Offset(0.0, 152.0), RenderCustomMultiChildLayoutBox#2e3cc@Offset(0.0, 152.0), _RenderInkFeatures#9481b@Offset(0.0, 152.0), RenderPhysicalModel#9e75e@Offset(0.0, 152.0), _RenderLayoutBuilder#cf79f@Offset(0.0, 152.0), RenderSemanticsAnnotations#a48eb@Offset(0.0, 152.0), RenderRepaintBoundary#fcab0@Offset(0.0, 152.0), RenderIgnorePointer#4be9f@Offset(0.0, 152.0), RenderAnimatedOpacity#a2c5a@Offset(0.0, 152.0), RenderAnimatedOpacity#6b53a@Offset(0.0, 152.0), _RenderColoredBox#f0195@Offset(0.0, 152.0), RenderAnimatedOpacity#df2a2@Offset(0.0, 152.0), RenderIgnorePointer#11146@Offset(0.0, 152.0), RenderAnimatedOpacity#048a5@Offset(0.0, 152.0), RenderRepaintBoundary#efdd3@Offset(0.0, 152.0), RenderSemanticsAnnotations#e2a80@Offset(0.0, 152.0), RenderOffstage#6b451@Offset(0.0, 152.0), RenderSemanticsAnnotations#a6800@Offset(0.0, 152.0), _RenderTheater#838eb@Offset(0.0, 152.0), RenderAbsorbPointer#a19c0@Offset(0.0, 152.0), RenderPointerListener#99384@Offset(0.0, 152.0), RenderSemanticsAnnotations#bed21@Offset(0.0, 152.0), RenderSemanticsAnnotations#17a10@Offset(0.0, 152.0), RenderSemanticsAnnotations#3c754@Offset(0.0, 152.0), RenderTapRegionSurface#8889d@Offset(0.0, 152.0), RenderSemanticsAnnotations#a9ea5@Offset(0.0, 152.0), RenderSemanticsAnnotations#c57f2@Offset(0.0, 152.0), HitTestEntry<HitTestTarget>#e840a(_ReusableRenderView#b328f), HitTestEntry<HitTestTarget>#cd757(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2165:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1947:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1080:7)
+#3      _pump (file:///Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart:61:16)
+<asynchronous suspension>
+#4      main.<anonymous closure>.<anonymous closure> (file:///Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart:432:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#7      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+00:08 +310: /Users/burcubalta/Desktop/development/cari_takip/test/features/transactions/presentation/transaction_pages_test.dart: form pasif tipli eski hareket düzenlenirken tip seçili kalır
+00:08 +311: All tests passed!
