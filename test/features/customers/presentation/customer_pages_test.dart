@@ -1,8 +1,10 @@
 import 'package:cari_takip/app/app.dart';
+import 'package:cari_takip/core/utils/app_date.dart';
 import 'package:cari_takip/features/customers/domain/customer.dart';
 import 'package:cari_takip/features/customers/presentation/customer_providers.dart';
 import 'package:cari_takip/features/dashboard/presentation/dashboard_providers.dart';
 import 'package:cari_takip/features/transaction_types/presentation/transaction_type_providers.dart';
+import 'package:cari_takip/features/transaction_types/domain/transaction_type.dart';
 import 'package:cari_takip/features/transactions/domain/financial_transaction.dart';
 import 'package:cari_takip/features/transactions/presentation/transaction_providers.dart';
 import 'package:flutter/material.dart';
@@ -19,8 +21,10 @@ import '../../../helpers/fake_transaction_type_repository.dart';
 Future<FakeCustomerRepository> _pumpCustomers(
   WidgetTester tester, {
   List<Customer>? customers,
+  List<TransactionType>? types,
   CustomerSummary? summary,
   List<FinancialTransaction>? transactions,
+  void Function(FakeTransactionRepository)? onTransactionRepository,
 }) async {
   tester.view.physicalSize = const Size(1400, 900);
   tester.view.devicePixelRatio = 1;
@@ -28,12 +32,13 @@ Future<FakeCustomerRepository> _pumpCustomers(
 
   final repo = FakeCustomerRepository(customers);
   if (summary != null) repo.summary = summary;
-  final typeRepo = FakeTransactionTypeRepository([makeType()]);
+  final typeRepo = FakeTransactionTypeRepository(types ?? [makeType()]);
   final transactionRepo = FakeTransactionRepository(
     customers: repo,
     types: typeRepo,
     initial: transactions,
   );
+  onTransactionRepository?.call(transactionRepo);
   await tester.pumpWidget(
     ProviderScope(
       overrides: [
@@ -113,8 +118,7 @@ void main() {
       expect(find.text('Ahmet Yılmaz'), findsOneWidget);
     });
 
-    testWidgets('arama listeyi süzer ve sonuç yoksa mesaj gösterir',
-        (t) async {
+    testWidgets('arama listeyi süzer ve sonuç yoksa mesaj gösterir', (t) async {
       await _pumpCustomers(
         t,
         customers: [
@@ -131,6 +135,97 @@ void main() {
       await t.enterText(find.byKey(const Key('customer-search')), 'yokyok');
       await t.pumpAndSettle();
       expect(find.text('Aramanıza uygun cari bulunamadı.'), findsOneWidget);
+    });
+
+    testWidgets(
+        'muhasebe ücreti kontrolü bu ay eksik borçları tüm carilere ekler',
+        (t) async {
+      final today = AppDate.today();
+      final feeType = makeType(id: 2, name: 'Muhasebe Ücreti');
+      late final FakeTransactionRepository transactionRepo;
+      await _pumpCustomers(
+        t,
+        customers: [
+          makeCustomer(accountingFeeKurus: 125000),
+          makeCustomer(id: 2, firstName: 'Mevcut', accountingFeeKurus: 99000),
+          makeCustomer(
+            id: 3,
+            firstName: 'Pasif',
+            accountingFeeKurus: 50000,
+            isActive: false,
+          ),
+          makeCustomer(
+            id: 4,
+            firstName: 'Tahsilatlı',
+            accountingFeeKurus: 30000,
+          ),
+          makeCustomer(
+            id: 5,
+            firstName: 'Önceki Ay',
+            accountingFeeKurus: 40000,
+          ),
+          makeCustomer(id: 6, firstName: 'Ücretsiz', accountingFeeKurus: 0),
+        ],
+        types: [makeType(), feeType],
+        transactions: [
+          makeTransaction(
+            id: 10,
+            customerId: 2,
+            transactionTypeId: feeType.id,
+            transactionTypeName: feeType.name,
+            date: today,
+          ),
+          makeTransaction(
+            id: 11,
+            customerId: 4,
+            transactionTypeId: feeType.id,
+            transactionTypeName: feeType.name,
+            direction: TransactionDirection.collection,
+            date: today,
+          ),
+          makeTransaction(
+            id: 12,
+            customerId: 5,
+            transactionTypeId: feeType.id,
+            transactionTypeName: feeType.name,
+            date: DateTime(today.year, today.month - 1, 15),
+          ),
+        ],
+        onTransactionRepository: (repo) => transactionRepo = repo,
+      );
+
+      await t.tap(find.byKey(const Key('check-accounting-fees')));
+      await t.pumpAndSettle();
+      expect(find.text('Muhasebe Ücretleri Oluşturulsun mu?'), findsOneWidget);
+      expect(find.textContaining('4 cari için'), findsOneWidget);
+      expect(find.textContaining('2.450,00 TL'), findsOneWidget);
+
+      await t.tap(find.text('Borçları Oluştur'));
+      await t.pumpAndSettle();
+
+      expect(transactionRepo.transactions, hasLength(7));
+      final generated = transactionRepo.transactions
+          .where((transaction) => transaction.id > 12)
+          .toList();
+      expect(
+        {
+          for (final transaction in generated)
+            transaction.customerId: transaction.amountKurus,
+        },
+        {1: 125000, 3: 50000, 4: 30000, 5: 40000},
+      );
+      expect(
+        generated.every((transaction) =>
+            transaction.transactionTypeId == feeType.id &&
+            transaction.direction == TransactionDirection.debt &&
+            transaction.transactionDate == today),
+        isTrue,
+      );
+
+      await t.tap(find.byKey(const Key('check-accounting-fees')));
+      await t.pumpAndSettle();
+      expect(find.text('Muhasebe Ücretleri Oluşturulsun mu?'), findsNothing);
+      expect(transactionRepo.transactions, hasLength(7));
     });
 
     testWidgets('pasife alma onay ister ve cariyi aktif listeden çıkarır',
@@ -200,6 +295,10 @@ void main() {
         '  Yeni Firma  ',
       );
       await t.enterText(find.byKey(const Key('field-phone')), ' 0555 ');
+      await t.enterText(
+        find.byKey(const Key('field-accountingFee')),
+        '1.250,50',
+      );
       await t.tap(find.text('Kaydet'));
       await t.pumpAndSettle();
 
@@ -208,6 +307,7 @@ void main() {
       expect(saved.phone, '0555');
       expect(saved.lastName, isNull);
       expect(saved.taxNumber, isNull);
+      expect(saved.accountingFeeKurus, 125050);
 
       expect(find.text('Cari kaydedildi.'), findsOneWidget);
       expect(find.text('Hareket Özeti'), findsOneWidget);
@@ -273,7 +373,10 @@ void main() {
     });
 
     testWidgets('düzenleme mevcut değerlerle açılır ve günceller', (t) async {
-      final repo = await _pumpCustomers(t, customers: [makeCustomer()]);
+      final repo = await _pumpCustomers(
+        t,
+        customers: [makeCustomer(accountingFeeKurus: 99000)],
+      );
 
       await t.tap(find.byTooltip('Düzenle'));
       await t.pumpAndSettle();
@@ -282,6 +385,7 @@ void main() {
       expect(_fieldText(t, 'field-firstName'), 'Ahmet');
       expect(_fieldText(t, 'field-lastName'), 'Yılmaz');
       expect(_fieldText(t, 'field-phone'), '0532 111 22 33');
+      expect(_fieldText(t, 'field-accountingFee'), '990,00');
 
       await t.enterText(find.byKey(const Key('field-firstName')), 'Mehmet');
       await t.tap(find.text('Kaydet'));
@@ -289,6 +393,7 @@ void main() {
 
       expect(repo.customers.single.firstName, 'Mehmet');
       expect(repo.customers.single.lastName, 'Yılmaz');
+      expect(repo.customers.single.accountingFeeKurus, 99000);
       expect(find.text('Mehmet Yılmaz'), findsOneWidget);
     });
   });
@@ -297,7 +402,7 @@ void main() {
     testWidgets('bilgileri, özeti ve aksiyonları gösterir', (t) async {
       await _pumpCustomers(
         t,
-        customers: [makeCustomer()],
+        customers: [makeCustomer(accountingFeeKurus: 45000)],
         summary: const CustomerSummary(transactionCount: 3, totalKurus: 125050),
       );
 
@@ -306,6 +411,8 @@ void main() {
 
       expect(find.text('Ahmet Yılmaz'), findsOneWidget);
       expect(find.text('0532 111 22 33'), findsOneWidget);
+      expect(find.text('450,00 TL'), findsOneWidget);
+      expect(find.text('Muhasebe Ücreti'), findsOneWidget);
       expect(find.text('1.250,50 TL'), findsOneWidget);
       expect(find.text('3'), findsOneWidget);
       expect(find.text('Düzenle'), findsOneWidget);

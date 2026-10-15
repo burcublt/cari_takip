@@ -111,6 +111,12 @@ class _DetailContent extends ConsumerWidget {
               _InfoRow('Telefon', customer.phone),
               _InfoRow('Vergi Numarası', customer.taxNumber),
               _InfoRow('Vergi Dairesi', customer.taxOffice),
+              _InfoRow(
+                'Muhasebe Ücreti',
+                customer.accountingFeeKurus == null
+                    ? null
+                    : Currency.formatKurusToTl(customer.accountingFeeKurus!),
+              ),
               _InfoRow('Adres', customer.address),
               _InfoRow('Not', customer.note),
             ],
@@ -206,7 +212,8 @@ class _RecentTransactions extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final transactions = ref.watch(customerRecentTransactionsProvider(customerId));
+    final transactions =
+        ref.watch(customerRecentTransactionsProvider(customerId));
 
     return transactions.when(
       loading: () => const Padding(

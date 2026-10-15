@@ -1,5 +1,8 @@
 import 'package:cari_takip/app/router.dart';
 import 'package:cari_takip/core/errors/error_mapper.dart';
+import 'package:cari_takip/core/utils/app_date.dart';
+import 'package:cari_takip/core/utils/currency.dart';
+import 'package:cari_takip/core/widgets/confirmation_dialog.dart';
 import 'package:cari_takip/core/widgets/empty_state.dart';
 import 'package:cari_takip/core/widgets/error_view.dart';
 import 'package:cari_takip/core/widgets/loading_view.dart';
@@ -7,6 +10,10 @@ import 'package:cari_takip/core/widgets/table_card.dart';
 import 'package:cari_takip/features/customers/domain/customer.dart';
 import 'package:cari_takip/features/customers/presentation/customer_actions.dart';
 import 'package:cari_takip/features/customers/presentation/customer_providers.dart';
+import 'package:cari_takip/features/transaction_types/domain/transaction_type.dart';
+import 'package:cari_takip/features/transaction_types/presentation/transaction_type_providers.dart';
+import 'package:cari_takip/features/transactions/domain/financial_transaction.dart';
+import 'package:cari_takip/features/transactions/presentation/transaction_providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -22,6 +29,7 @@ class CustomerListPage extends ConsumerStatefulWidget {
 
 class _CustomerListPageState extends ConsumerState<CustomerListPage> {
   late final TextEditingController _search;
+  bool _checkingAccountingFees = false;
 
   @override
   void initState() {
@@ -35,6 +43,113 @@ class _CustomerListPageState extends ConsumerState<CustomerListPage> {
   void dispose() {
     _search.dispose();
     super.dispose();
+  }
+
+  Future<void> _checkAccountingFees() async {
+    if (_checkingAccountingFees) return;
+    setState(() => _checkingAccountingFees = true);
+
+    final messenger = ScaffoldMessenger.of(context);
+    var createdCount = 0;
+    try {
+      final today = AppDate.today();
+      final types = await ref
+          .read(transactionTypeRepositoryProvider)
+          .getTransactionTypes(status: TransactionTypeStatusFilter.all);
+      TransactionType? accountingFeeType;
+      for (final type in types) {
+        if (type.name.trim() == 'Muhasebe Ücreti' && type.isActive) {
+          accountingFeeType = type;
+          break;
+        }
+      }
+      if (accountingFeeType == null) {
+        throw StateError('Aktif "Muhasebe Ücreti" işlem tipi bulunamadı.');
+      }
+
+      final customers = await ref
+          .read(customerRepositoryProvider)
+          .getCustomers(status: CustomerStatusFilter.all);
+      final monthTransactions =
+          await ref.read(transactionRepositoryProvider).getTransactions(
+                filter: TransactionFilter(
+                  transactionTypeId: accountingFeeType.id,
+                  fromDate: AppDate.startOfMonth(today),
+                  toDate: AppDate.endOfMonth(today),
+                ),
+              );
+      final customersWithDebt = monthTransactions
+          .where((transaction) =>
+              transaction.direction == TransactionDirection.debt)
+          .map((transaction) => transaction.customerId)
+          .toSet();
+      final missingCustomers = customers.where((customer) {
+        final fee = customer.accountingFeeKurus;
+        return fee != null &&
+            fee > 0 &&
+            !customersWithDebt.contains(customer.id);
+      }).toList();
+
+      if (!mounted) return;
+      if (missingCustomers.isEmpty) {
+        messenger.showSnackBar(
+          const SnackBar(
+            content: Text(
+              'Bu ay için oluşturulması gereken muhasebe ücreti borcu yok.',
+            ),
+          ),
+        );
+        return;
+      }
+
+      final totalKurus = missingCustomers.fold<int>(
+        0,
+        (total, customer) => total + customer.accountingFeeKurus!,
+      );
+      final confirmed = await showConfirmationDialog(
+        context,
+        title: 'Muhasebe Ücretleri Oluşturulsun mu?',
+        message: '${missingCustomers.length} cari için '
+            '${Currency.formatKurusToTl(totalKurus)} tutarında '
+            '${AppDate.formatMonthYear(today)} muhasebe ücreti borcu '
+            'oluşturulacak.',
+        confirmLabel: 'Borçları Oluştur',
+      );
+      if (!confirmed || !mounted) return;
+
+      final repository = ref.read(transactionRepositoryProvider);
+      for (final customer in missingCustomers) {
+        await repository.createTransaction(
+          TransactionDraft(
+            customerId: customer.id,
+            transactionTypeId: accountingFeeType.id,
+            direction: TransactionDirection.debt,
+            transactionDate: today,
+            amountKurus: customer.accountingFeeKurus!,
+            note: '${AppDate.formatMonthYear(today)} muhasebe ücreti',
+          ),
+        );
+        createdCount++;
+      }
+      invalidateTransactionData(ref);
+      messenger.showSnackBar(
+        SnackBar(
+          content: Text(
+            '$createdCount cari için muhasebe ücreti borcu oluşturuldu.',
+          ),
+        ),
+      );
+    } on Object catch (error, stack) {
+      if (createdCount > 0) invalidateTransactionData(ref);
+      if (!mounted) return;
+      messenger.showSnackBar(
+        SnackBar(
+          content: Text(ErrorMapper.userMessage(error, stackTrace: stack)),
+        ),
+      );
+    } finally {
+      if (mounted) setState(() => _checkingAccountingFees = false);
+    }
   }
 
   @override
@@ -53,6 +168,14 @@ class _CustomerListPageState extends ConsumerState<CustomerListPage> {
             children: [
               Text('Cariler', style: theme.textTheme.headlineSmall),
               const Spacer(),
+              OutlinedButton.icon(
+                key: const Key('check-accounting-fees'),
+                onPressed:
+                    _checkingAccountingFees ? null : _checkAccountingFees,
+                icon: const Icon(Icons.fact_check_outlined),
+                label: const Text('Muhasebe Ücreti Kontrol Et'),
+              ),
+              const SizedBox(width: 12),
               FilledButton.icon(
                 onPressed: () => context.go(_newCustomerRoute),
                 icon: const Icon(Icons.add),
@@ -180,6 +303,7 @@ class _CustomerTable extends StatelessWidget {
       columns: const [
         AppTableColumn('Ad / Soyad', flex: 3),
         AppTableColumn('Telefon', flex: 2),
+        AppTableColumn('Muhasebe Ücreti', flex: 2),
         AppTableColumn('Vergi No', flex: 2),
         AppTableColumn('Durum', width: 80),
         AppTableColumn('İşlemler', width: 150),
@@ -196,13 +320,15 @@ class _CustomerTable extends StatelessWidget {
               child: Text(
                 customer.displayName,
                 overflow: TextOverflow.ellipsis,
-                style: customer.isActive
-                    ? null
-                    : TextStyle(color: scheme.outline),
+                style:
+                    customer.isActive ? null : TextStyle(color: scheme.outline),
               ),
             ),
           ),
           Text(customer.phone ?? '-', overflow: TextOverflow.ellipsis),
+          Text(
+            Currency.formatKurusToTl(customer.accountingFeeKurus ?? 0),
+          ),
           Text(customer.taxNumber ?? '-', overflow: TextOverflow.ellipsis),
           Text(
             customer.isActive ? 'Aktif' : 'Pasif',

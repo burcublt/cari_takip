@@ -1,3 +1,19 @@
+enum TransactionDirection {
+  debt('debt', 'Borç'),
+  collection('collection', 'Tahsilat');
+
+  const TransactionDirection(this.dbValue, this.label);
+
+  final String dbValue;
+  final String label;
+
+  static TransactionDirection fromDbValue(String value) => switch (value) {
+        'debt' => debt,
+        'collection' => collection,
+        _ => throw FormatException('Geçersiz hareket yönü: $value'),
+      };
+}
+
 /// Listelerde gösterilen finans hareketi (cari ve tip adlarıyla birlikte).
 class FinancialTransaction {
   const FinancialTransaction({
@@ -6,6 +22,7 @@ class FinancialTransaction {
     required this.customerName,
     required this.transactionTypeId,
     required this.transactionTypeName,
+    required this.direction,
     required this.transactionDate,
     required this.amountKurus,
     required this.createdAt,
@@ -18,6 +35,7 @@ class FinancialTransaction {
   final String customerName;
   final int transactionTypeId;
   final String transactionTypeName;
+  final TransactionDirection direction;
 
   /// Yalnızca tarih (saat bilgisi yok).
   final DateTime transactionDate;
@@ -34,6 +52,7 @@ class TransactionDraft {
   const TransactionDraft({
     required this.customerId,
     required this.transactionTypeId,
+    required this.direction,
     required this.transactionDate,
     required this.amountKurus,
     this.note,
@@ -41,6 +60,7 @@ class TransactionDraft {
 
   final int customerId;
   final int transactionTypeId;
+  final TransactionDirection direction;
   final DateTime transactionDate;
   final int amountKurus;
   final String? note;

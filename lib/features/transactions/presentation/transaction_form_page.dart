@@ -46,6 +46,7 @@ class _TransactionFormPageState extends ConsumerState<TransactionFormPage> {
   List<TransactionType> _types = const [];
   int? _customerId;
   int? _typeId;
+  TransactionDirection? _direction;
   DateTime _date = AppDate.today();
 
   bool _loading = true;
@@ -110,10 +111,11 @@ class _TransactionFormPageState extends ConsumerState<TransactionFormPage> {
         if (existing != null) {
           _customerId = existing.customerId;
           _typeId = existing.transactionTypeId;
+          _direction = existing.direction;
           _date = existing.transactionDate;
           _dateText.text = AppDate.formatDisplay(_date);
-          _amount.text =
-              Currency.formatKurusToTl(existing.amountKurus, includeUnit: false);
+          _amount.text = Currency.formatKurusToTl(existing.amountKurus,
+              includeUnit: false);
           _note.text = existing.note ?? '';
         } else {
           _customerId = customerId;
@@ -169,6 +171,7 @@ class _TransactionFormPageState extends ConsumerState<TransactionFormPage> {
     final draft = TransactionDraft(
       customerId: _customerId!,
       transactionTypeId: _typeId!,
+      direction: _direction!,
       transactionDate: _date,
       amountKurus: Currency.parseTlToKurus(_amount.text)!,
       note: _note.text,
@@ -219,120 +222,143 @@ class _TransactionFormPageState extends ConsumerState<TransactionFormPage> {
       onSave: _saving ? null : _save,
       onCancel: _saving ? null : _cancel,
       child: Align(
-      alignment: Alignment.topLeft,
-      child: ConstrainedBox(
-        constraints: const BoxConstraints(maxWidth: 680),
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.all(24),
-          child: Form(
-            key: _formKey,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  _isEdit ? 'Finans Hareketi Düzenle' : 'Yeni Finans Hareketi',
-                  style: Theme.of(context).textTheme.headlineSmall,
-                ),
-                const SizedBox(height: 24),
-                FormField<int>(
-                  key: const Key('field-customer'),
-                  initialValue: _customerId,
-                  validator: Validators.customer,
-                  builder: (field) => CustomerSelector(
-                    label: 'Cari *',
-                    placeholder: 'Cari seçiniz',
-                    customer: _customerById(field.value),
-                    errorText: field.errorText,
-                    onTap: () async {
-                      final picked = await showCustomerPickerDialog(
-                        context,
-                        customers: _selectableCustomers,
-                        selectedId: field.value,
-                      );
-                      if (picked == null) return;
-                      field.didChange(picked.id);
-                      setState(() => _customerId = picked.id);
-                    },
+        alignment: Alignment.topLeft,
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 680),
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.all(24),
+            child: Form(
+              key: _formKey,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    _isEdit
+                        ? 'Finans Hareketi Düzenle'
+                        : 'Yeni Finans Hareketi',
+                    style: Theme.of(context).textTheme.headlineSmall,
                   ),
-                ),
-                const SizedBox(height: 16),
-                TextFormField(
-                  key: const Key('field-date'),
-                  controller: _dateText,
-                  readOnly: true,
-                  onTap: _pickDate,
-                  decoration: const InputDecoration(
-                    labelText: 'Tarih *',
-                    border: OutlineInputBorder(),
-                    suffixIcon: Icon(Icons.calendar_today_outlined),
+                  const SizedBox(height: 24),
+                  FormField<int>(
+                    key: const Key('field-customer'),
+                    initialValue: _customerId,
+                    validator: Validators.customer,
+                    builder: (field) => CustomerSelector(
+                      label: 'Cari *',
+                      placeholder: 'Cari seçiniz',
+                      customer: _customerById(field.value),
+                      errorText: field.errorText,
+                      onTap: () async {
+                        final picked = await showCustomerPickerDialog(
+                          context,
+                          customers: _selectableCustomers,
+                          selectedId: field.value,
+                        );
+                        if (picked == null) return;
+                        field.didChange(picked.id);
+                        setState(() => _customerId = picked.id);
+                      },
+                    ),
                   ),
-                ),
-                const SizedBox(height: 16),
-                DropdownButtonFormField<int>(
-                  key: const Key('field-type'),
-                  initialValue: _typeId,
-                  isExpanded: true,
-                  validator: Validators.transactionType,
-                  onChanged: (id) => _typeId = id,
-                  decoration: const InputDecoration(
-                    labelText: 'İşlem Tipi *',
-                    border: OutlineInputBorder(),
+                  const SizedBox(height: 16),
+                  TextFormField(
+                    key: const Key('field-date'),
+                    controller: _dateText,
+                    readOnly: true,
+                    onTap: _pickDate,
+                    decoration: const InputDecoration(
+                      labelText: 'Tarih *',
+                      border: OutlineInputBorder(),
+                      suffixIcon: Icon(Icons.calendar_today_outlined),
+                    ),
                   ),
-                  items: [
-                    for (final type in _selectableTypes)
-                      DropdownMenuItem<int>(
-                        value: type.id,
-                        child: Text(
-                          type.isActive ? type.name : '${type.name} (Pasif)',
+                  const SizedBox(height: 16),
+                  DropdownButtonFormField<TransactionDirection>(
+                    key: const Key('field-direction'),
+                    initialValue: _direction,
+                    isExpanded: true,
+                    validator: (direction) => direction == null
+                        ? 'Borç veya tahsilat seçiniz.'
+                        : null,
+                    onChanged: (direction) => _direction = direction,
+                    decoration: const InputDecoration(
+                      labelText: 'Hareket Türü *',
+                      border: OutlineInputBorder(),
+                    ),
+                    items: [
+                      for (final direction in TransactionDirection.values)
+                        DropdownMenuItem<TransactionDirection>(
+                          value: direction,
+                          child: Text(direction.label),
                         ),
+                    ],
+                  ),
+                  const SizedBox(height: 16),
+                  DropdownButtonFormField<int>(
+                    key: const Key('field-type'),
+                    initialValue: _typeId,
+                    isExpanded: true,
+                    validator: Validators.transactionType,
+                    onChanged: (id) => _typeId = id,
+                    decoration: const InputDecoration(
+                      labelText: 'İşlem Tipi *',
+                      border: OutlineInputBorder(),
+                    ),
+                    items: [
+                      for (final type in _selectableTypes)
+                        DropdownMenuItem<int>(
+                          value: type.id,
+                          child: Text(
+                            type.isActive ? type.name : '${type.name} (Pasif)',
+                          ),
+                        ),
+                    ],
+                  ),
+                  const SizedBox(height: 16),
+                  TextFormField(
+                    key: const Key('field-amount'),
+                    controller: _amount,
+                    validator: Validators.amount,
+                    keyboardType:
+                        const TextInputType.numberWithOptions(decimal: true),
+                    textInputAction: TextInputAction.next,
+                    decoration: const InputDecoration(
+                      labelText: 'Tutar (TL) *',
+                      hintText: '1.250,50',
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  TextFormField(
+                    key: const Key('field-note'),
+                    controller: _note,
+                    maxLines: 3,
+                    decoration: const InputDecoration(
+                      labelText: 'Not',
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                  const SizedBox(height: 24),
+                  Row(
+                    children: [
+                      FilledButton(
+                        onPressed: _saving ? null : _save,
+                        child: const Text('Kaydet'),
                       ),
-                  ],
-                ),
-                const SizedBox(height: 16),
-                TextFormField(
-                  key: const Key('field-amount'),
-                  controller: _amount,
-                  validator: Validators.amount,
-                  keyboardType:
-                      const TextInputType.numberWithOptions(decimal: true),
-                  textInputAction: TextInputAction.next,
-                  decoration: const InputDecoration(
-                    labelText: 'Tutar (TL) *',
-                    hintText: '1.250,50',
-                    border: OutlineInputBorder(),
+                      const SizedBox(width: 12),
+                      TextButton(
+                        onPressed: _saving ? null : _cancel,
+                        child: const Text('Vazgeç'),
+                      ),
+                    ],
                   ),
-                ),
-                const SizedBox(height: 16),
-                TextFormField(
-                  key: const Key('field-note'),
-                  controller: _note,
-                  maxLines: 3,
-                  decoration: const InputDecoration(
-                    labelText: 'Not',
-                    border: OutlineInputBorder(),
-                  ),
-                ),
-                const SizedBox(height: 24),
-                Row(
-                  children: [
-                    FilledButton(
-                      onPressed: _saving ? null : _save,
-                      child: const Text('Kaydet'),
-                    ),
-                    const SizedBox(width: 12),
-                    TextButton(
-                      onPressed: _saving ? null : _cancel,
-                      child: const Text('Vazgeç'),
-                    ),
-                  ],
-                ),
-                const FormShortcutHint(),
-              ],
+                  const FormShortcutHint(),
+                ],
+              ),
             ),
           ),
         ),
       ),
-    ),
     );
   }
 }

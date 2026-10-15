@@ -276,7 +276,7 @@ class _TransactionListPageState extends ConsumerState<TransactionListPage> {
             children: [
               Text('${items.length} kayıt'),
               Text(
-                'Toplam: $totalText',
+                'Net Bakiye: $totalText',
                 style: Theme.of(context).textTheme.titleMedium,
               ),
             ],
@@ -303,7 +303,7 @@ class _HeaderRow extends StatelessWidget {
         children: [
           SizedBox(width: _dateWidth, child: Text('Tarih', style: style)),
           Expanded(flex: 2, child: Text('Cari', style: style)),
-          Expanded(flex: 2, child: Text('İşlem Tipi', style: style)),
+          Expanded(flex: 2, child: Text('Yön / Tip', style: style)),
           Expanded(flex: 3, child: Text('Not', style: style)),
           SizedBox(
             width: _amountWidth,
@@ -344,9 +344,19 @@ class _TransactionRow extends StatelessWidget {
           ),
           Expanded(
             flex: 2,
-            child: Text(
-              transaction.transactionTypeName,
-              overflow: TextOverflow.ellipsis,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  transaction.direction.label,
+                  style: Theme.of(context).textTheme.labelSmall,
+                ),
+                Text(
+                  transaction.transactionTypeName,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ],
             ),
           ),
           Expanded(
@@ -360,7 +370,11 @@ class _TransactionRow extends StatelessWidget {
           SizedBox(
             width: _amountWidth,
             child: Text(
-              Currency.formatKurusToTl(transaction.amountKurus),
+              Currency.formatKurusToTl(
+                transaction.direction == TransactionDirection.debt
+                    ? -transaction.amountKurus
+                    : transaction.amountKurus,
+              ),
               textAlign: TextAlign.right,
             ),
           ),

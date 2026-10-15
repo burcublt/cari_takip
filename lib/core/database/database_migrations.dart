@@ -15,7 +15,11 @@ class Migration {
 ///
 /// TODO(faz-9): Upgrade öncesi otomatik yedek alınacak.
 abstract final class DatabaseMigrations {
-  static const all = <Migration>[Migration(1, _v1)];
+  static const all = <Migration>[
+    Migration(1, _v1),
+    Migration(2, _v2),
+    Migration(3, _v3),
+  ];
 
   static int get latestVersion => all.last.version;
 
@@ -102,5 +106,24 @@ CREATE TABLE financial_transactions (
         'updated_at': now,
       });
     }
+  }
+
+  static Future<void> _v2(DatabaseExecutor db) async {
+    await db.execute(
+      'ALTER TABLE customers ADD COLUMN accounting_fee_kurus INTEGER',
+    );
+  }
+
+  static Future<void> _v3(DatabaseExecutor db) async {
+    await db.execute('''
+ALTER TABLE financial_transactions
+ADD COLUMN direction TEXT NOT NULL DEFAULT 'debt'
+CHECK (direction IN ('debt', 'collection'))''');
+    await db.update(
+      'transaction_types',
+      {'is_active': 0, 'updated_at': DateTime.now().toUtc().toIso8601String()},
+      where: 'name = ?',
+      whereArgs: ['Borç'],
+    );
   }
 }

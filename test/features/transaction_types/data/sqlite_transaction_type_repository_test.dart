@@ -31,10 +31,9 @@ void main() {
     return all.firstWhere((t) => t.name == name).id;
   }
 
-  test('seed tipleri alfabetik ve aktif olarak gelir', () async {
+  test('Borç yön seçimine taşınır, diğer seed tipleri aktif kalır', () async {
     final types = await repo.getTransactionTypes();
     expect(types.map((t) => t.name), [
-      'Borç',
       'Fatura',
       'Kira',
       'Muhasebe Ücreti',
@@ -42,6 +41,10 @@ void main() {
       'Vergi',
     ]);
     expect(types.every((t) => t.isActive), isTrue);
+    final inactive = await repo.getTransactionTypes(
+      status: TransactionTypeStatusFilter.inactive,
+    );
+    expect(inactive.single.name, 'Borç');
   });
 
   group('createTransactionType', () {
@@ -52,7 +55,7 @@ void main() {
       expect(created.isActive, isTrue);
       expect(created.createdAt, clock);
       expect(created.updatedAt, clock);
-      expect(await repo.getTransactionTypes(), hasLength(7));
+      expect(await repo.getTransactionTypes(), hasLength(6));
     });
 
     test('boş ad reddedilir', () async {
@@ -79,7 +82,7 @@ void main() {
           reason: name,
         );
       }
-      expect(await repo.getTransactionTypes(), hasLength(6));
+      expect(await repo.getTransactionTypes(), hasLength(5));
     });
 
     test('pasif tiple aynı isim de duplicate olur', () async {
@@ -149,9 +152,8 @@ void main() {
         (await repo.getTransactionTypes(
           status: TransactionTypeStatusFilter.inactive,
         ))
-            .single
-            .name,
-        'Kira',
+            .map((type) => type.name),
+        contains('Kira'),
       );
 
       await repo.setTransactionTypeActive(id, isActive: true);

@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:cari_takip/app/router.dart';
 import 'package:cari_takip/core/errors/error_mapper.dart';
+import 'package:cari_takip/core/utils/currency.dart';
 import 'package:cari_takip/core/utils/validators.dart';
 import 'package:cari_takip/core/widgets/error_view.dart';
 import 'package:cari_takip/core/widgets/form_shortcuts.dart';
@@ -30,6 +31,7 @@ class _CustomerFormPageState extends ConsumerState<CustomerFormPage> {
   final _taxOffice = TextEditingController();
   final _address = TextEditingController();
   final _note = TextEditingController();
+  final _accountingFee = TextEditingController();
 
   late bool _loading = widget.customerId != null;
   String? _loadError;
@@ -53,6 +55,7 @@ class _CustomerFormPageState extends ConsumerState<CustomerFormPage> {
       _taxOffice,
       _address,
       _note,
+      _accountingFee,
     ]) {
       controller.dispose();
     }
@@ -84,6 +87,10 @@ class _CustomerFormPageState extends ConsumerState<CustomerFormPage> {
       _taxOffice.text = customer.taxOffice ?? '';
       _address.text = customer.address ?? '';
       _note.text = customer.note ?? '';
+      final accountingFeeKurus = customer.accountingFeeKurus;
+      _accountingFee.text = accountingFeeKurus == null
+          ? ''
+          : Currency.formatKurusToTl(accountingFeeKurus, includeUnit: false);
       setState(() => _loading = false);
     } on Object catch (error, stack) {
       if (!mounted) return;
@@ -110,6 +117,9 @@ class _CustomerFormPageState extends ConsumerState<CustomerFormPage> {
       taxOffice: _taxOffice.text,
       address: _address.text,
       note: _note.text,
+      accountingFeeKurus: _accountingFee.text.trim().isEmpty
+          ? null
+          : Currency.parseTlToKurus(_accountingFee.text),
     );
 
     try {
@@ -150,55 +160,64 @@ class _CustomerFormPageState extends ConsumerState<CustomerFormPage> {
       onSave: _saving ? null : _save,
       onCancel: _saving ? null : _cancel,
       child: Align(
-      alignment: Alignment.topLeft,
-      child: ConstrainedBox(
-        constraints: const BoxConstraints(maxWidth: 680),
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.all(24),
-          child: Form(
-            key: _formKey,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  _isEdit ? 'Cari Düzenle' : 'Yeni Cari',
-                  style: Theme.of(context).textTheme.headlineSmall,
-                ),
-                const SizedBox(height: 24),
-                _field(
-                  'field-firstName',
-                  _firstName,
-                  'Ad / Unvan *',
-                  validator: Validators.customerName,
-                  autofocus: !_isEdit,
-                ),
-                _field('field-lastName', _lastName, 'Soyad'),
-                _field('field-phone', _phone, 'Telefon'),
-                _field('field-taxNumber', _taxNumber, 'Vergi Numarası'),
-                _field('field-taxOffice', _taxOffice, 'Vergi Dairesi'),
-                _field('field-address', _address, 'Adres', maxLines: 2),
-                _field('field-note', _note, 'Not', maxLines: 3),
-                const SizedBox(height: 8),
-                Row(
-                  children: [
-                    FilledButton(
-                      onPressed: _saving ? null : _save,
-                      child: const Text('Kaydet'),
-                    ),
-                    const SizedBox(width: 12),
-                    TextButton(
-                      onPressed: _saving ? null : _cancel,
-                      child: const Text('Vazgeç'),
-                    ),
-                  ],
-                ),
-                const FormShortcutHint(),
-              ],
+        alignment: Alignment.topLeft,
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 680),
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.all(24),
+            child: Form(
+              key: _formKey,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    _isEdit ? 'Cari Düzenle' : 'Yeni Cari',
+                    style: Theme.of(context).textTheme.headlineSmall,
+                  ),
+                  const SizedBox(height: 24),
+                  _field(
+                    'field-firstName',
+                    _firstName,
+                    'Ad / Unvan *',
+                    validator: Validators.customerName,
+                    autofocus: !_isEdit,
+                  ),
+                  _field('field-lastName', _lastName, 'Soyad'),
+                  _field('field-phone', _phone, 'Telefon'),
+                  _field('field-taxNumber', _taxNumber, 'Vergi Numarası'),
+                  _field('field-taxOffice', _taxOffice, 'Vergi Dairesi'),
+                  _field('field-address', _address, 'Adres', maxLines: 2),
+                  _field('field-note', _note, 'Not', maxLines: 3),
+                  _field(
+                    'field-accountingFee',
+                    _accountingFee,
+                    'Muhasebe Ücreti (TL)',
+                    validator: _validateAccountingFee,
+                    keyboardType:
+                        const TextInputType.numberWithOptions(decimal: true),
+                    hintText: '1.250,50',
+                  ),
+                  const SizedBox(height: 8),
+                  Row(
+                    children: [
+                      FilledButton(
+                        onPressed: _saving ? null : _save,
+                        child: const Text('Kaydet'),
+                      ),
+                      const SizedBox(width: 12),
+                      TextButton(
+                        onPressed: _saving ? null : _cancel,
+                        child: const Text('Vazgeç'),
+                      ),
+                    ],
+                  ),
+                  const FormShortcutHint(),
+                ],
+              ),
             ),
           ),
         ),
       ),
-    ),
     );
   }
 
@@ -209,6 +228,8 @@ class _CustomerFormPageState extends ConsumerState<CustomerFormPage> {
     String? Function(String?)? validator,
     int maxLines = 1,
     bool autofocus = false,
+    TextInputType? keyboardType,
+    String? hintText,
   }) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 16),
@@ -217,15 +238,26 @@ class _CustomerFormPageState extends ConsumerState<CustomerFormPage> {
         controller: controller,
         maxLines: maxLines,
         autofocus: autofocus,
+        keyboardType: keyboardType,
         // Enter: sonraki alana geç (çok satırlı alanlarda yeni satır).
         textInputAction:
             maxLines == 1 ? TextInputAction.next : TextInputAction.newline,
         validator: validator,
         decoration: InputDecoration(
           labelText: label,
+          hintText: hintText,
           border: const OutlineInputBorder(),
         ),
       ),
     );
+  }
+
+  String? _validateAccountingFee(String? value) {
+    if (value == null || value.trim().isEmpty) return null;
+    final amount = Currency.parseTlToKurus(value);
+    if (amount == null || amount < 0) {
+      return 'Geçerli, sıfır veya pozitif bir TL tutarı girin.';
+    }
+    return null;
   }
 }

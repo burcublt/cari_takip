@@ -13,6 +13,7 @@ class Customer {
     this.taxOffice,
     this.address,
     this.note,
+    this.accountingFeeKurus,
   });
 
   final int id;
@@ -25,6 +26,7 @@ class Customer {
   final String? taxOffice;
   final String? address;
   final String? note;
+  final int? accountingFeeKurus;
   final bool isActive;
   final DateTime createdAt;
   final DateTime updatedAt;
@@ -48,6 +50,7 @@ class CustomerDraft {
     this.taxOffice,
     this.address,
     this.note,
+    this.accountingFeeKurus,
   });
 
   /// Form girdilerini trim eder; boş opsiyonel alanları `null` yapar.
@@ -59,6 +62,7 @@ class CustomerDraft {
     String? taxOffice,
     String? address,
     String? note,
+    int? accountingFeeKurus,
   }) {
     return CustomerDraft(
       firstName: firstName.trim(),
@@ -68,6 +72,7 @@ class CustomerDraft {
       taxOffice: _clean(taxOffice),
       address: _clean(address),
       note: _clean(note),
+      accountingFeeKurus: accountingFeeKurus,
     );
   }
 
@@ -78,6 +83,7 @@ class CustomerDraft {
   final String? taxOffice;
   final String? address;
   final String? note;
+  final int? accountingFeeKurus;
 
   static String? _clean(String? value) {
     final trimmed = value?.trim();

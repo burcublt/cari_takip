@@ -140,6 +140,7 @@ class SqliteCustomerRepository implements CustomerRepository {
         'tax_office': draft.taxOffice,
         'address': draft.address,
         'note': draft.note,
+        'accounting_fee_kurus': draft.accountingFeeKurus,
       };
 
   Customer _fromRow(Map<String, Object?> row) {
@@ -152,6 +153,7 @@ class SqliteCustomerRepository implements CustomerRepository {
       taxOffice: row['tax_office'] as String?,
       address: row['address'] as String?,
       note: row['note'] as String?,
+      accountingFeeKurus: row['accounting_fee_kurus'] as int?,
       isActive: (row['is_active']! as int) == 1,
       createdAt: DateTime.parse(row['created_at']! as String),
       updatedAt: DateTime.parse(row['updated_at']! as String),

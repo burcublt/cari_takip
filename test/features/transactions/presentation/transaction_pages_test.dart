@@ -72,6 +72,7 @@ List<FinancialTransaction> _sample() => [
         customerName: 'Zeynep Kaya',
         transactionTypeId: 2,
         transactionTypeName: 'Vergi',
+        direction: TransactionDirection.collection,
         date: DateTime(2026, 9, 20),
         amountKurus: 50000,
         note: 'KDV',
@@ -102,6 +103,17 @@ Future<void> _pickType(
   await tester.pumpAndSettle();
 }
 
+Future<void> _pickDirection(
+  WidgetTester tester,
+  TransactionDirection direction,
+) async {
+  await _pickType(
+    tester,
+    find.byKey(const Key('field-direction')),
+    direction.label,
+  );
+}
+
 void main() {
   group('liste', () {
     testWidgets('kayıt yoksa empty state gösterir ve forma yönlendirir',
@@ -119,10 +131,12 @@ void main() {
       await _pump(t, transactions: _sample());
 
       expect(find.text('Eylül kirası'), findsOneWidget);
-      expect(find.text('1.250,50 TL'), findsOneWidget);
+      expect(find.text('Borç'), findsOneWidget);
+      expect(find.text('Tahsilat'), findsOneWidget);
+      expect(find.text('-1.250,50 TL'), findsOneWidget);
       expect(find.text('500,00 TL'), findsOneWidget);
       expect(find.text('2 kayıt'), findsOneWidget);
-      expect(find.text('Toplam: 1.750,50 TL'), findsOneWidget);
+      expect(find.text('Net Bakiye: -750,50 TL'), findsOneWidget);
 
       expect(
         t.getTopLeft(find.text('KDV')).dy <
@@ -146,12 +160,12 @@ void main() {
       await _pickCustomer(t, const Key('filter-customer'), 'Zeynep Kaya');
       expect(find.text('KDV'), findsOneWidget);
       expect(find.text('Eylül kirası'), findsNothing);
-      expect(find.text('Toplam: 500,00 TL'), findsOneWidget);
+      expect(find.text('Net Bakiye: 500,00 TL'), findsOneWidget);
 
       await t.tap(find.text('Filtreleri Temizle'));
       await t.pumpAndSettle();
       expect(find.text('Eylül kirası'), findsOneWidget);
-      expect(find.text('Toplam: 1.750,50 TL'), findsOneWidget);
+      expect(find.text('Net Bakiye: -750,50 TL'), findsOneWidget);
     });
 
     testWidgets('işlem tipi filtresi çalışır', (t) async {
@@ -161,7 +175,7 @@ void main() {
 
       expect(find.text('KDV'), findsOneWidget);
       expect(find.text('Eylül kirası'), findsNothing);
-      expect(find.text('Toplam: 500,00 TL'), findsOneWidget);
+      expect(find.text('Net Bakiye: 500,00 TL'), findsOneWidget);
     });
 
     testWidgets('eşleşme yoksa filtre mesajı gösterir', (t) async {
@@ -189,7 +203,7 @@ void main() {
       expect(repo.transactions.map((x) => x.id), [1]);
       expect(find.text('KDV'), findsNothing);
       expect(find.text('Finans hareketi silindi.'), findsOneWidget);
-      expect(find.text('Toplam: 1.250,50 TL'), findsOneWidget);
+      expect(find.text('Net Bakiye: -1.250,50 TL'), findsOneWidget);
     });
 
     testWidgets('silmekten vazgeçilirse kayıt korunur', (t) async {
@@ -215,6 +229,7 @@ void main() {
       await t.pumpAndSettle();
 
       expect(find.text('Cari seçiniz.'), findsOneWidget);
+      expect(find.text('Borç veya tahsilat seçiniz.'), findsOneWidget);
       expect(find.text('İşlem tipi seçiniz.'), findsOneWidget);
       expect(find.text('Tutar giriniz.'), findsOneWidget);
       expect(repo.transactions, hasLength(2));
@@ -242,6 +257,7 @@ void main() {
       await t.pumpAndSettle();
 
       await _pickCustomer(t, const Key('field-customer'), 'Ahmet Yılmaz');
+      await _pickDirection(t, TransactionDirection.collection);
       await _pickType(t, find.byKey(const Key('field-type')), 'Kira');
       await t.enterText(find.byKey(const Key('field-amount')), '1.250,50');
       await t.enterText(find.byKey(const Key('field-note')), ' Test notu ');
@@ -251,6 +267,7 @@ void main() {
       final saved = repo.transactions.single;
       expect(saved.customerId, 1);
       expect(saved.transactionTypeId, 1);
+      expect(saved.direction, TransactionDirection.collection);
       expect(saved.amountKurus, 125050);
       expect(saved.note, 'Test notu');
       expect(saved.transactionDate, AppDate.today());
@@ -349,12 +366,28 @@ void main() {
     });
 
     testWidgets('düzenleme mevcut değerlerle açılır ve günceller', (t) async {
-      final repo = await _pump(t, transactions: [_sample().first]);
+      final repo = await _pump(
+        t,
+        transactions: [
+          makeTransaction(
+            direction: TransactionDirection.collection,
+            note: 'Eylül kirası',
+          ),
+        ],
+      );
 
       await t.tap(find.byTooltip('Düzenle'));
       await t.pumpAndSettle();
 
       expect(find.text('Finans Hareketi Düzenle'), findsOneWidget);
+      expect(
+        t
+            .widget<DropdownButtonFormField<TransactionDirection>>(
+              find.byKey(const Key('field-direction')),
+            )
+            .initialValue,
+        TransactionDirection.collection,
+      );
       expect(
         find.descendant(
           of: find.byKey(const Key('field-customer')),
@@ -384,6 +417,8 @@ void main() {
       expect(repo.transactions.single.amountKurus, 200000);
       expect(repo.transactions.single.note, 'Eylül kirası');
       expect(find.text('2.000,00 TL'), findsWidgets);
+      expect(
+          repo.transactions.single.direction, TransactionDirection.collection);
     });
 
     testWidgets('Esc ile vazgeçilir ve liste ekranına dönülür', (t) async {
@@ -406,6 +441,7 @@ void main() {
       await t.pumpAndSettle();
 
       await _pickCustomer(t, const Key('field-customer'), 'Ahmet Yılmaz');
+      await _pickDirection(t, TransactionDirection.debt);
       await _pickType(t, find.byKey(const Key('field-type')), 'Kira');
       await t.enterText(find.byKey(const Key('field-amount')), '300');
 
@@ -415,6 +451,7 @@ void main() {
       await t.pumpAndSettle();
 
       expect(repo.transactions.single.amountKurus, 30000);
+      expect(repo.transactions.single.direction, TransactionDirection.debt);
     });
 
     testWidgets('cari seçicide Enter ilk eşleşmeyi seçer', (t) async {

@@ -77,12 +77,28 @@ void main() {
       expect(loaded!.taxNumber, '0123456789');
     });
 
+    test('muhasebe ücretini kuruş olarak saklar', () async {
+      final created = await repo.createCustomer(
+        CustomerDraft.fromForm(
+          firstName: 'Firma',
+          accountingFeeKurus: 125050,
+        ),
+      );
+
+      expect(created.accountingFeeKurus, 125050);
+      expect(
+        (await repo.getCustomerById(created.id))!.accountingFeeKurus,
+        125050,
+      );
+    });
+
     test('boş ad reddedilir', () async {
       await expectLater(
         repo.createCustomer(const CustomerDraft(firstName: '   ')),
         throwsA(_appError(AppErrorKind.validation)),
       );
-      expect(await repo.getCustomers(status: CustomerStatusFilter.all), isEmpty);
+      expect(
+          await repo.getCustomers(status: CustomerStatusFilter.all), isEmpty);
     });
   });
 
@@ -157,11 +173,16 @@ void main() {
       clock = DateTime.utc(2026, 10, 1, 9);
       final updated = await repo.updateCustomer(
         created.id,
-        CustomerDraft.fromForm(firstName: ' Ali Veli ', phone: ''),
+        CustomerDraft.fromForm(
+          firstName: ' Ali Veli ',
+          phone: '',
+          accountingFeeKurus: 45000,
+        ),
       );
 
       expect(updated.firstName, 'Ali Veli');
       expect(updated.phone, isNull);
+      expect(updated.accountingFeeKurus, 45000);
       expect(updated.isActive, isFalse);
       expect(updated.createdAt, DateTime.utc(2026, 9, 29, 10));
       expect(updated.updatedAt, DateTime.utc(2026, 10, 1, 9));

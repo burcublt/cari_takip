@@ -19,7 +19,8 @@ class SqliteTransactionRepository implements TransactionRepository {
   );
 
   static const _select = '''
-SELECT t.id, t.customer_id, t.transaction_type_id, t.transaction_date,
+SELECT t.id, t.customer_id, t.transaction_type_id, t.direction,
+       t.transaction_date,
        t.amount_kurus, t.note, t.created_at, t.updated_at,
        c.first_name, c.last_name, tt.name AS type_name
 FROM financial_transactions t
@@ -69,9 +70,10 @@ JOIN transaction_types tt ON tt.id = t.transaction_type_id''';
     return _guard(() async {
       final (where, args) = _where(filter);
       final rows = await _db.rawQuery(
-        'SELECT COALESCE(SUM(t.amount_kurus), 0) AS total '
+        'SELECT COALESCE(SUM(CASE WHEN t.direction = ? '
+        'THEN -t.amount_kurus ELSE t.amount_kurus END), 0) AS total '
         'FROM financial_transactions t $where',
-        args,
+        [TransactionDirection.debt.dbValue, ...args],
       );
       return rows.first['total']! as int;
     });
@@ -159,6 +161,7 @@ JOIN transaction_types tt ON tt.id = t.transaction_type_id''';
     return {
       'customer_id': draft.customerId,
       'transaction_type_id': draft.transactionTypeId,
+      'direction': draft.direction.dbValue,
       'transaction_date': AppDate.toDbDate(draft.transactionDate),
       'amount_kurus': draft.amountKurus,
       'note': note == null || note.isEmpty ? null : note,
@@ -204,6 +207,7 @@ JOIN transaction_types tt ON tt.id = t.transaction_type_id''';
       customerName: last == null || last.isEmpty ? first : '$first $last',
       transactionTypeId: row['transaction_type_id']! as int,
       transactionTypeName: row['type_name']! as String,
+      direction: TransactionDirection.fromDbValue(row['direction']! as String),
       transactionDate: DateTime.parse(row['transaction_date']! as String),
       amountKurus: row['amount_kurus']! as int,
       note: row['note'] as String?,

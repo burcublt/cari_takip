@@ -9,6 +9,7 @@ Customer makeCustomer({
   String? lastName = 'Yılmaz',
   String? phone = '0532 111 22 33',
   String? taxNumber = '1234567890',
+  int? accountingFeeKurus,
   bool isActive = true,
 }) {
   return Customer(
@@ -17,6 +18,7 @@ Customer makeCustomer({
     lastName: lastName,
     phone: phone,
     taxNumber: taxNumber,
+    accountingFeeKurus: accountingFeeKurus,
     isActive: isActive,
     createdAt: DateTime.utc(2026, 9, 29),
     updatedAt: DateTime.utc(2026, 9, 29),
@@ -25,15 +27,13 @@ Customer makeCustomer({
 
 /// Bellekte çalışan sahte repository (widget testleri için).
 class FakeCustomerRepository implements CustomerRepository {
-  FakeCustomerRepository([List<Customer>? initial])
-      : customers = [...?initial];
+  FakeCustomerRepository([List<Customer>? initial]) : customers = [...?initial];
 
   final List<Customer> customers;
   CustomerSummary summary =
       const CustomerSummary(transactionCount: 0, totalKurus: 0);
 
-  int get _nextId =>
-      customers.fold(0, (max, c) => c.id > max ? c.id : max) + 1;
+  int get _nextId => customers.fold(0, (max, c) => c.id > max ? c.id : max) + 1;
 
   bool _matches(Customer c, CustomerStatusFilter status) => switch (status) {
         CustomerStatusFilter.all => true,
@@ -76,6 +76,7 @@ class FakeCustomerRepository implements CustomerRepository {
       taxOffice: d.taxOffice,
       address: d.address,
       note: d.note,
+      accountingFeeKurus: d.accountingFeeKurus,
       isActive: isActive,
       createdAt: DateTime.utc(2026, 9, 29),
       updatedAt: DateTime.utc(2026, 9, 30),
@@ -95,8 +96,7 @@ class FakeCustomerRepository implements CustomerRepository {
     if (index < 0) {
       throw const AppException(AppErrorKind.notFound, 'Cari bulunamadı.');
     }
-    final updated =
-        _build(id, draft, isActive: customers[index].isActive);
+    final updated = _build(id, draft, isActive: customers[index].isActive);
     customers[index] = updated;
     return updated;
   }
@@ -117,6 +117,7 @@ class FakeCustomerRepository implements CustomerRepository {
       taxOffice: c.taxOffice,
       address: c.address,
       note: c.note,
+      accountingFeeKurus: c.accountingFeeKurus,
       isActive: isActive,
       createdAt: c.createdAt,
       updatedAt: c.updatedAt,

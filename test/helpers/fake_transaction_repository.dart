@@ -11,6 +11,7 @@ FinancialTransaction makeTransaction({
   String customerName = 'Ahmet Yılmaz',
   int transactionTypeId = 1,
   String transactionTypeName = 'Kira',
+  TransactionDirection direction = TransactionDirection.debt,
   DateTime? date,
   int amountKurus = 125050,
   String? note,
@@ -21,6 +22,7 @@ FinancialTransaction makeTransaction({
     customerName: customerName,
     transactionTypeId: transactionTypeId,
     transactionTypeName: transactionTypeName,
+    direction: direction,
     transactionDate: date ?? DateTime(2026, 9, 15),
     amountKurus: amountKurus,
     note: note,
@@ -61,7 +63,8 @@ class FakeTransactionRepository implements TransactionRepository {
   }
 
   FinancialTransaction _build(int id, TransactionDraft d) {
-    final customer = customers.customers.firstWhere((c) => c.id == d.customerId);
+    final customer =
+        customers.customers.firstWhere((c) => c.id == d.customerId);
     final type = types.types.firstWhere((t) => t.id == d.transactionTypeId);
     final note = d.note?.trim();
     return makeTransaction(
@@ -70,6 +73,7 @@ class FakeTransactionRepository implements TransactionRepository {
       customerName: customer.displayName,
       transactionTypeId: type.id,
       transactionTypeName: type.name,
+      direction: d.direction,
       date: d.transactionDate,
       amountKurus: d.amountKurus,
       note: note == null || note.isEmpty ? null : note,
@@ -112,9 +116,14 @@ class FakeTransactionRepository implements TransactionRepository {
   Future<int> getTransactionTotalKurus({
     TransactionFilter filter = const TransactionFilter(),
   }) async {
-    return transactions
-        .where((t) => _matches(t, filter))
-        .fold<int>(0, (sum, t) => sum + t.amountKurus);
+    return transactions.where((t) => _matches(t, filter)).fold<int>(
+          0,
+          (sum, t) =>
+              sum +
+              (t.direction == TransactionDirection.debt
+                  ? -t.amountKurus
+                  : t.amountKurus),
+        );
   }
 
   @override

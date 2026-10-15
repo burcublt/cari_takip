@@ -45,6 +45,7 @@ void main() {
   TransactionDraft draft({
     int? customerId,
     int typeId = _kira,
+    TransactionDirection direction = TransactionDirection.debt,
     DateTime? date,
     int amount = 125050,
     String? note,
@@ -52,6 +53,7 @@ void main() {
     return TransactionDraft(
       customerId: customerId ?? ali,
       transactionTypeId: typeId,
+      direction: direction,
       transactionDate: date ?? DateTime(2026, 9, 15),
       amountKurus: amount,
       note: note,
@@ -67,6 +69,7 @@ void main() {
       expect(created.id, isPositive);
       expect(created.customerName, 'Ahmet Yılmaz');
       expect(created.transactionTypeName, 'Kira');
+      expect(created.direction, TransactionDirection.debt);
       expect(created.transactionDate, DateTime(2026, 9, 15));
       expect(created.amountKurus, 125050);
       expect(created.note, 'Eylül kirası');
@@ -76,6 +79,19 @@ void main() {
       final raw = await appDb.db.query('financial_transactions');
       expect(raw.single['transaction_date'], '2026-09-15');
       expect(raw.single['amount_kurus'], 125050);
+      expect(raw.single['direction'], 'debt');
+    });
+
+    test('tahsilat yönünü saklar ve yeniden yükler', () async {
+      final created = await repo.createTransaction(
+        draft(direction: TransactionDirection.collection),
+      );
+
+      expect(created.direction, TransactionDirection.collection);
+      expect(
+        (await repo.getTransactionById(created.id))!.direction,
+        TransactionDirection.collection,
+      );
     });
 
     test('boş not null saklanır; soyadı olmayan cari tek ad gösterilir',
@@ -132,6 +148,7 @@ void main() {
           date: DateTime(2026, 10),
           amount: 7550,
           typeId: _borc,
+          direction: TransactionDirection.collection,
           note: 'd',
         ),
       );
@@ -189,12 +206,12 @@ void main() {
 
     test('toplam yalnızca filtreye uyan kayıtları kuruş olarak toplar',
         () async {
-      expect(await repo.getTransactionTotalKurus(), 182550);
+      expect(await repo.getTransactionTotalKurus(), -167450);
       expect(
         await repo.getTransactionTotalKurus(
           filter: TransactionFilter(customerId: ali),
         ),
-        175000,
+        -175000,
       );
       expect(
         await repo.getTransactionTotalKurus(
@@ -203,7 +220,7 @@ void main() {
             fromDate: DateTime(2026, 9, 15),
           ),
         ),
-        75000,
+        -75000,
       );
     });
 
@@ -241,6 +258,7 @@ void main() {
         draft(
           customerId: veli,
           typeId: _fatura,
+          direction: TransactionDirection.collection,
           date: DateTime(2026, 9, 20),
           amount: 99,
           note: ' yeni ',
@@ -250,6 +268,7 @@ void main() {
       expect(updated.id, created.id);
       expect(updated.customerName, 'Veli Ltd.');
       expect(updated.transactionTypeName, 'Fatura');
+      expect(updated.direction, TransactionDirection.collection);
       expect(updated.transactionDate, DateTime(2026, 9, 20));
       expect(updated.amountKurus, 99);
       expect(updated.note, 'yeni');
